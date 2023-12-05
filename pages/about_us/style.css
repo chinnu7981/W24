@@ -1,0 +1,138 @@
+body {
+    background-color: black;
+    color: white;
+}
+#img img{
+    width:36vw;
+    height:auto;
+}
+.video{
+    margin:auto;
+    width:100%;
+}
+#abt
+{
+    margin-top: 5%;
+    background-color: gray;
+    width: 65vw;
+    height: auto;
+    border: 1px solid whitesmoke;
+    border-radius: 30px;
+    @media  only screen and (max-width:767px)
+    {
+        margin-left:1.5% ;
+        margin-right:2% ;
+        width: 105vw;
+        font-size: 12px;
+    }
+}
+#abt h1 
+{
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+#abt p{
+    margin: 0 2vw; 
+   text-align: justify;
+    text-transform: capitalize;
+}
+button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-size: inherit;
+ font-family: inherit;
+}
+
+button.learn-more {
+ width: 12rem;
+ height: auto;
+}
+
+button.learn-more .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background: rgb(11, 248, 244);
+ border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #fefefe;
+}
+
+button.learn-more .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.29rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #0d0d0d;
+ border-right: 0.125rem solid #090909;
+ transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color:rgb(11, 248, 244) ;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+button:hover .circle {
+ width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+ background: #181818;
+ transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+ color: #000000;
+}
+.img1{
+    margin-top: 2vh;
+    width: 65vw;
+    height: 40vh;
+    align-items: center;
+    display: flex;
+margin: auto;
+}
+.vid1{
+    width: 100vw;
+    height: 100vh;
+}
