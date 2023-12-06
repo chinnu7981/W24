@@ -55,7 +55,7 @@ h2 {
 }
 
 .container {
-    margin: 40px;
+    margin: 80px 40px;
     width: calc(100% - 80px);
 }
 
@@ -278,6 +278,29 @@ h2 {
   fill: rgb(32, 24, 123);
 }
 
+.button{
+  width: 30%;
+  height: 50px;
+}
+
+
+.button--effect-1{
+  margin-left: 8%;
+  width: 40%;
+}
+
+.button--effect-2{
+  margin-right: 10%;
+}
+
+.button--effect-1 .button__text{
+  color: black;
+}
+
+.button--line .morph-shape svg{
+  stroke: black;
+}
+
 @media only screen and (min-width: 500px) {
     .grid {
         margin-left: -20px;
@@ -300,27 +323,12 @@ h2 {
     .grid {
         grid-template-columns: repeat(3, 1fr);
     }
-}
 
-.button{
-  width: 30%;
-  height: 50px;
-}
+    .button--effect-1{
+      margin-left: 10%;
+    }
 
-
-.button--effect-1{
-  margin-left: 10%;
-  width: 40%;
-}
-
-.button--effect-2{
-  margin-right: 10%;
-}
-
-.button--effect-1 .button__text{
-  color: black;
-}
-
-.button--line .morph-shape svg{
-  stroke: black;
+    .button__text {
+      font-size: 1.5em;
+    }
 }
