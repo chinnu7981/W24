@@ -2,6 +2,114 @@ body {
     background-color: black;
     color: white;
 }
+
+.navToggle6 {
+    position: absolute;
+    width: 60px;
+    height: 120px;
+    top: 30%;
+    left: 3%;
+    transition-duration: 0.5s;
+  }
+  .navToggle6 .icon {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 8px;
+    width: 60px;
+    top: 20px;
+    left: 8px;
+    background-color: #fff;
+  }
+  .navToggle6 .icon:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 60px;
+    height: 7px;
+    background-color: #fff;
+    content: "";
+    top: -20px;
+  }
+  .navToggle6 .icon:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    background-color: #fff;
+    content: "";
+    top: 20px;
+  }
+  .navToggle6.open .icon {
+    transition-duration: 0.5s;
+    transform: rotateZ(180deg);
+  }
+  .navToggle6.open .icon:before {
+    transform: rotateZ(45deg) scaleX(0.75) translate(20px, -6px);
+  }
+  .navToggle6.open .icon:after {
+    transform: rotateZ(-45deg) scaleX(0.75) translate(20px, 6px);
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    background: #FFF;
+    background-size: cover !important;
+  }
+  .background.open {
+    transition-duration: 0.5s;
+    opacity: 0.4;
+  }
+  
+  
+  .upper-nav {
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 80px;
+    z-index: 999999;
+  }
+  
+  .navbar {
+    width: max(30%, 300px);
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 15px;
+    left: -5px;
+    top: 70px;
+    display: none;
+    height: 100vh;
+    position: absolute;
+    line-height: 60px;
+    font-size: min(3.0vh,40px);
+    z-index: 9999;
+    font-family: "Oswald", sans-serif;
+    -webkit-box-shadow: 0 0 15px 5px #000;
+    box-shadow: 0 0 15px 5px #222;
+    background: grey;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+  }
+  
+  li {
+    width: 100%;
+    cursor: pointer;
+    padding: 0.5%;
+  }
+  li:hover {
+    background: black;
+  }
 #img img{
     width:36vw;
     height:auto;
