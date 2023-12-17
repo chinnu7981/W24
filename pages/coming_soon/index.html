@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../favicon.png" rel="icon" />
+    <title>Wissenaire'23 | Comming Soon</title>
+    <link rel="stylesheet" href="./comingSoon.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  /> -->
+  </head>
+
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".toggle").click(function () {
+        $(".menu").toggleClass("active");
+      });
+      $(".toggle").bind("tap", function () {
+        $(".menu").toggleClass("active");
+      });
+    });
+  </script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+    .toggle {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 50000001 !important;
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+      color: wheat;
+    }
+
+    .toggle a {
+      text-decoration: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      -webkit-filter: invert(100%);
+      filter: invert(100%);
+    }
+
+    .menu {
+      margin: 0;
+      padding: 0;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #0c1226;
+      /* background-image: linear-gradient(to right, #072142, #14216d 42%, #160d4b); */
+      z-index: 50000000 !important;
+      transition: 0.5s;
+    }
+
+    .meunul {
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    li {
+      /* font-family: monospace; */
+      font-family: "Didact Gothic", sans-serif;
+    }
+
+    .meunul li {
+      list-style: none;
+    }
+
+    .meunul li a {
+      padding: 10px;
+      display: inline-block;
+
+      font-family: "Didact Gothic", sans-serif;
+      font-size: 2em;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    .meunul li a:hover {
+    }
+
+    .menu.active {
+      left: 0;
+      overflow: auto;
+    }
+
+    .toggle {
+      color: white !important;
+    }
+
+    /* body {
+    text-align: center;
+  } */
+
+    .letter {
+      font-family: "Didact Gothic", sans-serif;
+      font-size: 5.1vmin;
+      text-shadow: 0.03em 0.03em 0.02em #777;
+      will-change: transform;
+      cursor: default;
+
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+
+    /* This is all we need :D */
+    .letter:hover {
+      transform: scaleX(1.2) scaleY(1.1);
+    }
+  </style>
+
+  <body
+    class="comingSoonBody"
+    style="display: flex; justify-content: center; align-items: center">
+    <div class="loader">
+      <span>C</span>
+      <span>O</span>
+      <span>M</span>
+      <span>I</span>
+      <span>N</span>
+      <span>G</span>
+      <span> </span>
+      <span>S</span>
+      <span>O</span>
+      <span>O</span>
+      <span>N</span>
+    </div>
+  </body>
+</html>
