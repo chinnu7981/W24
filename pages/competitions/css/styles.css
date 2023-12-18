@@ -17,22 +17,42 @@ body {
   margin: 0;
 }
 
-.navToggle6 {
-  position: absolute;
-  width: max(5vh, 2.5vw);
-  aspect-ratio: 2/1;
-  top: 30%;
-  left: 3%;
-  transition-duration: 0.5s;
-}
 .navToggle6 .icon {
   transition-duration: 0.5s;
   position: absolute;
   height: 8px;
   width: 60px;
-  top: 20px;
-  left: 8px;
+  top: 40px;
+  left: 80vw;
   background-color: #fff;
+}
+@media screen and (max-width: 1000px) {
+  #wiss_logo_full {
+    display: none;
+    height: 0;
+  }
+
+  .navToggle6 #wiss_logo {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: max(10vh, 7.5vw);
+    top: 0px;
+    left: 4vw;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #wiss_logo {
+    display: none;
+    height: 0;
+  }
+
+  #wiss_logo_full {
+    position: absolute;
+    height: 40px;
+    top: 20px;
+    left: 4vw;
+    filter: none;
+  }
 }
 .navToggle6 .icon:before {
   transition-duration: 0.5s;
