@@ -631,3 +631,9 @@ btn {
     display: inline !important;
   }
 } */
+@media screen and (max-width: 990px) {
+  .glass-morph .navbar-toggler {
+    height: 40px !important;
+    width: 80px;
+  }
+}
