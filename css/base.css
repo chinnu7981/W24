@@ -46,14 +46,6 @@
   width: 100vw;
 
   /* background-color: black; */
-
-}
-
-@media screen and (max-width: 768px) {
-  .glass-morph {
-    backdrop-filter: blur(3px);
-    background-color: rgba(255, 255, 255, 0.1);
-  }
 }
 
 body {
@@ -137,14 +129,16 @@ button {
   height: 100%;
   border: 5px double var(--color);
   box-shadow: inset 0px 0px 15px #195480;
-  -webkit-clip-path: polygon(30% 0%,
-      70% 0%,
-      100% 30%,
-      100% 70%,
-      70% 100%,
-      30% 100%,
-      0% 70%,
-      0% 30%);
+  -webkit-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
 }
 
 .arrow {
@@ -258,7 +252,8 @@ button:hover #clip {
 }
 
 @keyframes greenLight8 {
-  from {}
+  from {
+  }
 
   to {
     box-shadow: inset 0px 0px 32px #27c39f;
@@ -613,13 +608,25 @@ video {
 }
 
 p {
-  font-family: 'Barlow-par';
+  font-family: "Barlow-par";
 }
 
 h1 {
-  font-family: 'Bomber-head';
+  font-family: "Bomber-head";
 }
 
 btn {
-  font-family: '';
+  font-family: "";
+}
+@media screen and (max-width: 768px) {
+  .glass-morph {
+    backdrop-filter: blur(3px);
+    background-color: rgb(0, 0, 0, 0.5);
+  }
+  .glass-morph a {
+    display: none;
+  }
+  .glass-morph #main-logo {
+    display: inline !important;
+  }
 }

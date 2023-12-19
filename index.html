@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wissenaire| 24</title>
+    <link rel="stylesheet" href="https://use.typekit.net/uoh2fuj.css" />
+    <link rel="shortcut icon" href="./favicon.png" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+    <script src="js/snap.svg-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" type="text/css" href="./css/cursor.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wissenaire| 24</title>
-  <link rel="stylesheet" href="https://use.typekit.net/uoh2fuj.css" />
-  <link rel="shortcut icon" href="./favicon.png" />
-  <link rel="shortcut icon" href="../favicon.ico">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/demo.css" />
-  <link rel="stylesheet" type="text/css" href="css/sidebar.css" />
-  <script src="js/snap.svg-min.js"></script>
-  <link rel="stylesheet" type="text/css" href="./css/base.css" />
-  <link rel="stylesheet" type="text/css" href="./css/cursor.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+  </head>
 
-  <script>
-    document.documentElement.className = "js";
-    var supportsCssVars = function () {
-      var e,
-        t = document.createElement("style");
-      return (
-        (t.innerHTML = "root: { --tmp-var: bold; }"),
-        document.head.appendChild(t),
-        (e = !!(
-          window.CSS &&
-          window.CSS.supports &&
-          window.CSS.supports("font-weight", "var(--tmp-var)")
-        )),
-        t.parentNode.removeChild(t),
-        e
-      );
-    };
-    supportsCssVars() ||
-      alert(
-        "Please view this demo in a modern browser that supports CSS Variables."
-      );
-  </script>
-</head>
-
-<body class="theme-1 demo-16 loading">
-
-
-  <div class="cur" id="circle">
-    <div class="main-cur"></div>
-    <img class="satelite" src="./img/cur.svg" alt="" />
-  </div>
-  <!-- <nav class="navbar navbar-light  glass-morph">
+  <body class="theme-1 demo-16 loading">
+    <div class="cur" id="circle">
+      <div class="main-cur"></div>
+      <img class="satelite" src="./img/cur.svg" alt="" />
+    </div>
+    <!-- <nav class="navbar navbar-light  glass-morph">
     <a class="navbar-brand" href="#">
       <img src="./PatchWork/" height="30" class="d-inline-block align-top" alt="">
     </a>
@@ -81,14 +81,10 @@
     </a>
 
   </nav> -->
-  <main>
-    <div class="main">
-
-
-
-
-      <!-- nav -->
-      <!-- <div class="container">
+    <main>
+      <div class="main">
+        <!-- nav -->
+        <!-- <div class="container">
         <nav id="menu" class="menu">
           <button class="menu__handle"><span>Menu</span></button>
 
@@ -114,122 +110,144 @@
             </ul>
           </div>
         </nav> -->
-      <!-- </div>/container -->
+        <!-- </div>/container -->
 
-      <div class="view">
-
-
-        <div class="frame">
-          <!-- <div class="frame__title">
+        <div class="view">
+          <div class="frame">
+            <!-- <div class="frame__title">
             <img src="./nav-logo.png" alt="Your Company Logo" class="company-logo" />
           </div> -->
-          <nav class="navbar navbar-light  glass-morph">
-            <a class="navbar-brand" href="#">
-              <img src="./PatchWork/wiss.png" height="30" class="d-inline-block align-top" alt="">
-            </a>
-            <a class="navbar-brand" href="./pages/about_us/">
-              <span style="font-family: 'MyFont';color: #57effe;">A</span>
-              <span style="font-family: 'MyFont'; color: white;">BOUT US</span>
-            </a>
-            <a class=" navbar-brand" href="#">
-              <span style="font-family: 'MyFont';color: #57effe;">T</span>
-              <span style="font-family: 'MyFont'; color: white;">HEME</span>
-            </a>
-            <a class="navbar-brand" href="#">
-              <p style="font-family: 'MyFont';">
-                <span style="font-family: 'MyFont';color: #57effe;">H</span>
-                <span style="font-family: 'MyFont'; color: white;">OME</span>
-              </p>
-            </a>
-            <a class="navbar-brand" href="./pages/competitions/">
-              <span style="font-family: 'MyFont';color: #57effe;">C</span>
-              <span style="font-family: 'MyFont'; color: white;">OMPETETIONS</span>
-            </a>
-            <a class="navbar-brand" href="./pages/reach_Us/">
-              <span style="font-family: 'MyFont';color: #57effe;">R</span>
-              <span style="font-family: 'MyFont'; color: white;">EACH US</span>
-            </a>
-            <a class="navbar-brand" href="#">
-              <span style="font-family: 'MyFont';color: #57effe;">M</span>
-              <span style="font-family: 'MyFont'; color: white;">ENU</span>
-            </a>
-
-          </nav>
-          <nav class="slides-nav">
-            <button class="slides-nav__item slides-nav__item--prev">
-              &larr;
-            </button>
-            <button class="slides-nav__item slides-nav__item--next">
-              &rarr;
-            </button>
-          </nav>
-        </div>
-        <div class="slides">
-          <div class="slide">
-            <div class="slide__img slide_content" style="background-image: url(./img/main1.jpg)">
-              <div style="color: white;">
-                <p style="font-family: 'Barlow-par';">Presenting</p>
-                <h1 style="font-family: 'Bomber-head';">Wissenaire 2024</h1>
-                <p style="font-family: 'Barlow-par';">Annual Techno - Management Fest IIT Bhubaneswar</p>
-              </div>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
-            </div>
+            <nav class="navbar navbar-light glass-morph">
+              <dummy>
+                <a class="navbar-brand" href="#" id="main-logo">
+                  <img
+                    src="./PatchWork/wiss.png"
+                    height="30"
+                    class="d-inline-block align-top"
+                    alt="" />
+                </a>
+              </dummy>
+              <a class="navbar-brand" href="./pages/about_us/">
+                <span style="font-family: 'MyFont'; color: #57effe">A</span>
+                <span style="font-family: 'MyFont'; color: white">BOUT US</span>
+              </a>
+              <a class="navbar-brand" href="#">
+                <span style="font-family: 'MyFont'; color: #57effe">T</span>
+                <span style="font-family: 'MyFont'; color: white">HEME</span>
+              </a>
+              <a class="navbar-brand" href="#">
+                <p style="font-family: 'MyFont'">
+                  <span style="font-family: 'MyFont'; color: #57effe">H</span>
+                  <span style="font-family: 'MyFont'; color: white">OME</span>
+                </p>
+              </a>
+              <a class="navbar-brand" href="./pages/competitions/">
+                <span style="font-family: 'MyFont'; color: #57effe">C</span>
+                <span style="font-family: 'MyFont'; color: white"
+                  >OMPETETIONS</span
+                >
+              </a>
+              <a class="navbar-brand" href="./pages/reach_Us/">
+                <span style="font-family: 'MyFont'; color: #57effe">R</span>
+                <span style="font-family: 'MyFont'; color: white">EACH US</span>
+              </a>
+              <a class="navbar-brand" href="#">
+                <span style="font-family: 'MyFont'; color: #57effe">M</span>
+                <span style="font-family: 'MyFont'; color: white">ENU</span>
+              </a>
+            </nav>
+            <nav class="slides-nav">
+              <button class="slides-nav__item slides-nav__item--prev">
+                &larr;
+              </button>
+              <button class="slides-nav__item slides-nav__item--next">
+                &rarr;
+              </button>
+            </nav>
           </div>
-          <div class="slide">
-            <div class="slide__img slide_content" style="background-image: url(./img/main.jpg)">
-              <!--               <video autoplay muted loop id="myVideo" class="slide__img">
+          <div class="slides">
+            <div class="slide">
+              <div
+                class="slide__img slide_content"
+                style="background-image: url(./img/main1.jpg)">
+                <div style="color: white">
+                  <p style="font-family: 'Barlow-par'">Presenting</p>
+                  <h1 style="font-family: 'Bomber-head'">Wissenaire 2024</h1>
+                  <p style="font-family: 'Barlow-par'">
+                    Annual Techno - Management Fest IIT Bhubaneswar
+                  </p>
+                </div>
+                <p class="dummy"></p>
+                <p class="dummy"></p>
+              </div>
+            </div>
+            <div class="slide">
+              <div
+                class="slide__img slide_content"
+                style="background-image: url(./img/main.jpg)">
+                <!--               <video autoplay muted loop id="myVideo" class="slide__img">
                 <source src="./img/theme/lamborgini.mp4" type="video/mp4" />
               </video> -->
-              <div style="color: white !important;">
-                <p>Theme</p>
-                <h1>Military</h1>
-                <p>Military stufff</p>
+                <div style="color: white !important">
+                  <p>Theme</p>
+                  <h1>Military</h1>
+                  <p>Military stufff</p>
+                </div>
+                <p class="dummy"></p>
+                <p class="dummy"></p>
+                <p class="dummy"></p>
+                <p class="dummy"></p>
               </div>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
             </div>
-          </div>
-          <div class="slide">
-            <div class="slide__img slide_content"
-              style="background-image: url(./img/worksh.jpg);display:flex;flex-direction: column;justify-content: space-around;align-items: center;">
-              <div>
-                <p>Wissenaire</p>
-                <a href="#">
-                  <h1 style="color:rgb(26,34,53	)!important;">Workshops</h1>
-                </a>
-                <p style="color:rgb(26,34,53	)!important;">
-                  Explore the array of our endless workshops with bundles of
-                  packed fun, technology, and knowledge.
-                </p>
-                <button>Link</button>
+            <div class="slide">
+              <div
+                class="slide__img slide_content"
+                style="
+                  background-image: url(./img/worksh.jpg);
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-around;
+                  align-items: center;
+                ">
+                <div>
+                  <p>Wissenaire</p>
+                  <a href="#">
+                    <h1 style="color: rgb(26, 34, 53) !important">Workshops</h1>
+                  </a>
+                  <p style="color: rgb(26, 34, 53) !important">
+                    Explore the array of our endless workshops with bundles of
+                    packed fun, technology, and knowledge.
+                  </p>
+                  <button>Link</button>
+                </div>
+                <p class="dummy"></p>
+                <p class="dummy"></p>
               </div>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
             </div>
-          </div>
-          <div class="slide" id="competetions-slide">
-            <div class="slide__img slide_content" style="background-image: url(./img/comp.jpg)">
-              <div style="color: white !important;">
-                <p>Wissenaire</p>
-                <a href="#">
-                  <h1 style="color: white !important;">Competitions</h1>
-                </a>
-                <p>
-                  Wissenaire organizes a range of competetions including Robo
-                  Wars, Trekkon, Kick Off, Robo Race,etc.
-                </p>
-                <button>Link</button>
+            <div class="slide" id="competetions-slide">
+              <div
+                class="slide__img slide_content"
+                style="background-image: url(./img/comp.jpg)">
+                <div style="color: white !important">
+                  <p>Wissenaire</p>
+                  <a href="#">
+                    <h1 style="color: white !important">Competitions</h1>
+                  </a>
+                  <p>
+                    Wissenaire organizes a range of competetions including Robo
+                    Wars, Trekkon, Kick Off, Robo Race,etc.
+                  </p>
+                  <button>Link</button>
+                </div>
+                <p class="dummy"></p>
+                <p class="dummy"></p>
               </div>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
             </div>
-          </div>
-          <div class="slide">
-            <div class="slide__img slide_content" style="background-image: url(./img/reach.jpg)">
-              <!--               <video
+            <div class="slide">
+              <div
+                class="slide__img slide_content"
+                style="background-image: url(./img/reach.jpg)">
+                <!--               <video
                 autoplay
                 muted
                 loop
@@ -238,106 +256,115 @@
                 style="width: 100vw; height: 100vh; object-fit: cover">
                 <source src="./img/reach_us/cut.mp4" type="video/mp4" />
               </video> -->
-              <div style="color: rgb(32,25,18) !important;">
-                <p>Wissenaire</p>
-                <a href="#">
-                  <h1 style="color: rgb(32,25,18) !important;">Reach Us</h1>
-                </a>
-                <p>
-                  Wissenaire, IIT Bhubaneswar being one of India's most prominent
-                  fests, attracts sponsorship from mammoth MNCs every year. To
-                  know more please reach us out.
-                </p>
+                <div style="color: rgb(32, 25, 18) !important">
+                  <p>Wissenaire</p>
+                  <a href="#">
+                    <h1 style="color: rgb(32, 25, 18) !important">Reach Us</h1>
+                  </a>
+                  <p>
+                    Wissenaire, IIT Bhubaneswar being one of India's most
+                    prominent fests, attracts sponsorship from mammoth MNCs
+                    every year. To know more please reach us out.
+                  </p>
+                </div>
+                <p class="dummy"></p>
+                <p class="dummy"></p>
+                <p class="dummy"></p>
+                <p class="dummy"></p>
               </div>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
             </div>
+            <div class="deco deco--5"></div>
+            <div class="deco deco--5"></div>
+            <div class="deco deco--6"></div>
+            <div class="deco deco--6"></div>
+            <div class="deco deco--7"></div>
+            <div class="deco deco--7"></div>
           </div>
-          <div class="deco deco--5"></div>
-          <div class="deco deco--5"></div>
-          <div class="deco deco--6"></div>
-          <div class="deco deco--6"></div>
-          <div class="deco deco--7"></div>
-          <div class="deco deco--7"></div>
         </div>
-
       </div>
-    </div>
+    </main>
 
-  </main>
+    <script src="js/classie.js"></script>
 
+    <script>
+      (function () {
+        function SVGMenu(el, options) {
+          this.el = el;
+          this.init();
+        }
 
-  <script src="js/classie.js"></script>
+        SVGMenu.prototype.init = function () {
+          this.trigger = this.el.querySelector("button.menu__handle");
+          this.shapeEl = this.el.querySelector("div.morph-shape");
 
-  <script>
-    (function () {
+          var s = Snap(this.shapeEl.querySelector("svg"));
+          this.pathEl = s.select("path");
+          this.paths = {
+            reset: this.pathEl.attr("d"),
+            open: this.shapeEl.getAttribute("data-morph-open"),
+            close: this.shapeEl.getAttribute("data-morph-close"),
+          };
 
-      function SVGMenu(el, options) {
-        this.el = el;
-        this.init();
-      }
+          this.isOpen = false;
 
-      SVGMenu.prototype.init = function () {
-        this.trigger = this.el.querySelector('button.menu__handle');
-        this.shapeEl = this.el.querySelector('div.morph-shape');
-
-        var s = Snap(this.shapeEl.querySelector('svg'));
-        this.pathEl = s.select('path');
-        this.paths = {
-          reset: this.pathEl.attr('d'),
-          open: this.shapeEl.getAttribute('data-morph-open'),
-          close: this.shapeEl.getAttribute('data-morph-close')
+          this.initEvents();
         };
 
-        this.isOpen = false;
+        SVGMenu.prototype.initEvents = function () {
+          this.trigger.addEventListener("click", this.toggle.bind(this));
+        };
 
-        this.initEvents();
-      };
+        SVGMenu.prototype.toggle = function () {
+          var self = this;
 
-      SVGMenu.prototype.initEvents = function () {
-        this.trigger.addEventListener('click', this.toggle.bind(this));
-      };
+          if (this.isOpen) {
+            classie.remove(self.el, "menu--anim");
+            setTimeout(function () {
+              classie.remove(self.el, "menu--open");
+            }, 250);
+          } else {
+            classie.add(self.el, "menu--anim");
+            setTimeout(function () {
+              classie.add(self.el, "menu--open");
+            }, 250);
+          }
+          this.pathEl
+            .stop()
+            .animate(
+              { path: this.isOpen ? this.paths.close : this.paths.open },
+              350,
+              mina.easeout,
+              function () {
+                self.pathEl
+                  .stop()
+                  .animate({ path: self.paths.reset }, 800, mina.elastic);
+              }
+            );
 
-      SVGMenu.prototype.toggle = function () {
-        var self = this;
+          this.isOpen = !this.isOpen;
+        };
 
-        if (this.isOpen) {
-          classie.remove(self.el, 'menu--anim');
-          setTimeout(function () { classie.remove(self.el, 'menu--open'); }, 250);
-        }
-        else {
-          classie.add(self.el, 'menu--anim');
-          setTimeout(function () { classie.add(self.el, 'menu--open'); }, 250);
-        }
-        this.pathEl.stop().animate({ 'path': this.isOpen ? this.paths.close : this.paths.open }, 350, mina.easeout, function () {
-          self.pathEl.stop().animate({ 'path': self.paths.reset }, 800, mina.elastic);
-        });
+        new SVGMenu(document.getElementById("menu"));
+      })();
+    </script>
 
-        this.isOpen = !this.isOpen;
-      };
-
-      new SVGMenu(document.getElementById('menu'));
-
-    })();
-  </script>
-
-  <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
-  <script src="./js/imagesloaded.pkgd.min.js"></script>
-  <script src="./js/gsap.min.js"></script>
-  <script src="./js/Observer.min.js"></script>
-  <script type="module" src="./js/demo16/index.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/Observer.min.js"></script>
+    <script type="module" src="./js/demo16/index.js"></script>
+    <script src="./js/script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
