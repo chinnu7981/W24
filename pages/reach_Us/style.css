@@ -137,7 +137,6 @@ html {
 .navbar {
   width: max-content;
   list-style-type: none;
-  border-left: min(7.5vw, 7.5vh) solid grey;
   margin-top: 10px;
   padding: 15px;
   left: -5px;
@@ -149,9 +148,8 @@ html {
   font-size: min(3vh, 5vw);
   z-index: 9999;
   font-family: "Oswald", sans-serif;
-  -webkit-box-shadow: 0 0 15px 5px #000;
-  box-shadow: 0 0 15px 5px #222;
-  background: grey;
+  background: transparent;
+  backdrop-filter: blur(5px);
 }
 
 a {
@@ -164,6 +162,7 @@ li {
   width: 100%;
   cursor: pointer;
   padding: 0.5%;
+  max-height: 7vh;
 }
 #head {
   font-family: "ethnocent";
@@ -187,8 +186,8 @@ li {
   border-radius: 15px;
   background: transparent;
   border-radius: 8px;
-  padding: 50px;
-  margin-bottom: 3em;
+  padding-top: min(100px,10vh);
+  margin-bottom: min(.5vh,.5vw);
   @media screen and (max-width: 1000px) {
     min-height: 350px;
     width: 70vw;
@@ -380,4 +379,23 @@ a span:nth-child(1) {
   .sc-icons {
     transform: translateY(-6vh);
   }
+}
+
+@font-face {
+  font-family: 'Wargate';
+  src: url(../../css/Wargate-Normal.otf);
+}
+button#home {
+  border: none;
+  outline: none;
+  width: 120px;
+  min-width: 7vw;
+  background-color: #33333377;
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  font-size: max(2.5vw,2vh);
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Wargate';
 }

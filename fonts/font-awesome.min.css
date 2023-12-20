@@ -14,6 +14,23 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'aAtmos';
+  src: url(./aAtmospheric.otf);
+}
+@font-face {
+  font-family: 'bomber-gradient';
+  src: url(./bomberescortgrad.ttf);
+}
+
+@font-face {
+  font-family: 'bomber-condensed';
+  src: url(./bomberescortcond.ttf);
+}
+@font-face {
+  font-family: 'Barlow-Black';
+  src: url(./Barlow-Black.ttf);
+}
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;

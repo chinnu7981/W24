@@ -4,6 +4,10 @@
   box-sizing: border-box;
   cursor: none !important;
 }
+@font-face {
+  font-family: 'Wargate';
+  src: url('./Wargate-Normal.otf');
+}
 
 @font-face {
   font-family: "MyFont";
