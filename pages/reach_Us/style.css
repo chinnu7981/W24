@@ -57,7 +57,7 @@ html {
     filter: none;
   }
 }
-.navToggle6 .icon {
+.navToggle6 .iicon {
   transition-duration: 0.5s;
   position: absolute;
   max-width: 10vw;
@@ -67,7 +67,7 @@ html {
   left: 80vw;
   background-color: #fff;
 }
-.navToggle6 .icon:before {
+.navToggle6 .iicon:before {
   transition-duration: 0.5s;
   position: absolute;
   width: 60px;
@@ -77,7 +77,7 @@ html {
   content: "";
   top: -15px;
 }
-.navToggle6 .icon:after {
+.navToggle6 .iicon:after {
   transition-duration: 0.5s;
   position: absolute;
   width: 60px;
@@ -87,7 +87,7 @@ html {
   content: "";
   top: 15px;
 }
-.navToggle6 .icon:after {
+.navToggle6 .iicon:after {
   transition-duration: 0.5s;
   position: absolute;
   width: 60px;
