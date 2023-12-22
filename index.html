@@ -40,6 +40,38 @@
         "Please view this demo in a modern browser that supports CSS Variables."
       );
   </script>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", (event) => {
+      let btns = document.getElementsByClassName('menu_btn')
+      let extra = document.getElementById('menu_extra')
+      let temp = 0;
+      btns[0].addEventListener('click', function () {
+        if (temp == 0) {
+          extra.style='right:0'
+          btns[0].innerHTML = `
+                <li class="nav-item hid">
+                  <a class="navbar-brand menu_btn" style="font-size: max(1.5vw,1.75vh);">
+                    <span style="font-family: 'MyFont'; color: #57effe">C</span>
+                    <span style="font-family: 'MyFont'; color: white">LOSE</span>
+                  </a>
+                </li>`
+          temp = 1
+        }
+        else {
+          extra.style='right:-1'
+          btns[0].innerHTML = `
+                <li class="nav-item hid">
+                  <a class="navbar-brand menu_btn" style="font-size: max(1.5vw,1.75vh);">
+                    <span style="font-family: 'MyFont'; color: #57effe">M</span>
+                    <span style="font-family: 'MyFont'; color: white">ENU</span>
+                  </a>
+                </li>`
+                temp=0;
+        }
+      })
+    });
+  </script>
 </head>
 
 <body class="theme-1 demo-16 loading">
@@ -119,16 +151,11 @@
                 </li>
                 <li class="nav-item">
                   <a class="navbar-brand" style="font-size: max(1.5vw,1.75vh);" href="#">
-                    <p style="font-family: 'MyFont'">
+                    <p style="font-family: 'MyFont'" class="mar_z">
                       <span style="font-family: 'MyFont'; color: #57effe">H</span>
                       <span style="font-family: 'MyFont'; color: white">OME</span>
                     </p>
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
                 </li>
                 <li class="nav-item">
                   <a class="navbar-brand" style="font-size: max(1.5vw,1.75vh);" href="./pages/competitions/">
@@ -137,15 +164,64 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="navbar-brand" style="font-size: max(1.5vw,1.75vh);" href="./pages/reach_Us/">
+                  <a href="./pages/reach_Us/" class="navbar-brand" style="font-size: max(1.5vw,1.75vh);"
+                    href="./pages/reach_Us/index.html">
                     <span style="font-family: 'MyFont'; color: #57effe">R</span>
                     <span style="font-family: 'MyFont'; color: white">EACH US</span>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="navbar-brand" style="font-size: max(1.5vw,1.75vh);" href="#">
+                <li class="nav-item hid">
+                  <a class="navbar-brand menu_btn" style="font-size: max(1.5vw,1.75vh);">
                     <span style="font-family: 'MyFont'; color: #57effe">M</span>
                     <span style="font-family: 'MyFont'; color: white">ENU</span>
+                  </a>
+                </li>
+                <li class="nav-item hidden">
+                  <a class="navbar-brand" style="font-size: max(1.5vw,1.75vh);" href="./pages/coming_soon/">
+                    <span style="font-family: 'MyFont'; color: #57effe">G</span>
+                    <span style="font-family: 'MyFont'; color: white">UESTS</span>
+                  </a>
+                </li>
+                <li class="nav-item hidden">
+                  <a class="navbar-brand" style="font-size: max(1.5vw,1.75vh);" href="./pages/coming_soon/">
+                    <span style="font-family: 'MyFont'; color: #57effe">E</span>
+                    <span style="font-family: 'MyFont'; color: white">XHIBITS</span>
+                  </a>
+                </li>
+                <li class="nav-item hidden">
+                  <a class="navbar-brand" style="font-size: max(1.5vw,1.75vh);" href="https://witp.wissenaire.org">
+                    <span style="font-family: 'MyFont'; color: #57effe">W</span>
+                    <span style="font-family: 'MyFont'; color: white">INTER INTERNSHIP</span>
+                  </a>
+                </li>
+                <li class="nav-item hidden">
+                  <a class="navbar-brand" style="font-size: max(1.5vw,1.75vh);" href="./pages/workshops/">
+                    <span style="font-family: 'MyFont'; color: #57effe">W</span>
+                    <span style="font-family: 'MyFont'; color: white">ORKSHOPS</span>
+                  </a>
+                </li>
+                <li class="nav-item hidden">
+                  <a class="navbar-brand" style="font-size: max(1.5vw,1.75vh);" href="./pages/coming_soon/">
+                    <span style="font-family: 'MyFont'; color: #57effe">I</span>
+                    <span style="font-family: 'MyFont'; color: white">NITIATIVES</span>
+                  </a>
+                </li>
+                <li class="nav-item hidden">
+                  <a class="navbar-brand" style="font-size: max(1.5vw,1.75vh);" href="./pages/coming_soon/">
+                    <span style="font-family: 'MyFont'; color: #57effe">H</span>
+                    <span style="font-family: 'MyFont'; color: white">IGHLIGHTS</span>
+                  </a>
+                </li>
+                <li class="nav-item hidden">
+                  <a class="navbar-brand" style="font-size: max(1.5vw,1.75vh);" href="./pages/coming_soon/">
+                    <span style="font-family: 'MyFont'; color: #57effe">T</span>
+                    <span style="font-family: 'MyFont'; color: white">EAM</span>
+                  </a>
+                </li>
+                <li class="nav-item hidden">
+                  <a class="navbar-brand" style="font-size: max(1.5vw,1.75vh);" href="./pages/coming_soon/">
+                    <span style="font-family: 'MyFont'; color: #57effe">S</span>
+                    <span style="font-family: 'MyFont'; color: white">PONSORS</span>
                   </a>
                 </li>
               </ul>
@@ -159,6 +235,66 @@
               &rarr;
             </button>
           </nav>
+        </div>
+
+        <div class="morph-shape" data-morph-open="M300-10c0,0,295,164,295,410c0,232-295,410-295,410"
+          data-morph-close="M300-10C300-10,5,154,5,400c0,232,295,410,295,410">
+          <svg width="100%" height="100%" viewBox="0 0 600 800" preserveAspectRatio="none">
+            <path fill="none" d="M300-10c0,0,0,164,0,410c0,232,0,410,0,410" />
+          </svg>
+        </div>
+        <div id="menu_extra" class="menu__inner glass-morph"
+          style="position: absolute;top: 11.05vh; font-family: 'bomber-gradient';padding-left: 0;width: auto;padding-right: 0;display: flex;flex-direction: column;">
+          <ul style="list-style: none;">
+            <li class="nav-item ">
+              <a class="navbar-brand" style="font-size: 1vw;" href="./pages/coming_soon/">
+                <span style="font-family: 'MyFont'; color: #57effe">G</span>
+                <span style="font-family: 'MyFont'; color: white">UESTS</span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="navbar-brand" style="font-size: 1vw;" href="./pages/coming_soon/">
+                <span style="font-family: 'MyFont'; color: #57effe">E</span>
+                <span style="font-family: 'MyFont'; color: white">XHIBITS</span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="navbar-brand" style="font-size: 1vw;" href="https://witp.wissenaire.org">
+                <span style="font-family: 'MyFont'; color: #57effe">W</span>
+                <span style="font-family: 'MyFont'; color: white">INTER INTERNSHIP</span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="navbar-brand" style="font-size: 1vw;" href="./pages/workshops/">
+                <span style="font-family: 'MyFont'; color: #57effe">W</span>
+                <span style="font-family: 'MyFont'; color: white">ORKSHOPS</span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="navbar-brand" style="font-size: 1vw;" href="./pages/coming_soon/">
+                <span style="font-family: 'MyFont'; color: #57effe">I</span>
+                <span style="font-family: 'MyFont'; color: white">NITIATIVES</span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="navbar-brand" style="font-size: 1vw;" href="./pages/coming_soon/">
+                <span style="font-family: 'MyFont'; color: #57effe">H</span>
+                <span style="font-family: 'MyFont'; color: white">IGHLIGHTS</span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="navbar-brand" style="font-size: 1vw;" href="./pages/coming_soon/">
+                <span style="font-family: 'MyFont'; color: #57effe">T</span>
+                <span style="font-family: 'MyFont'; color: white">EAM</span>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="navbar-brand" style="font-size: 1vw;" href="./pages/coming_soon/">
+                <span style="font-family: 'MyFont'; color: #57effe">S</span>
+                <span style="font-family: 'MyFont'; color: white">PONSORS</span>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="slides">
           <div class="slide">
@@ -176,18 +312,16 @@
             </div>
           </div>
           <div class="slide">
-            <div class="slide__img slide_content" style="background-image: url(./img/main.jpg)">
-              <!--               <video autoplay muted loop id="myVideo" class="slide__img">
-                <source src="./img/theme/lamborgini.mp4" type="video/mp4" />
-              </video> -->
-              <div style="color: white !important">
-                <p>Theme</p>
-                <h1>Military</h1>
-                <p>Military stufff</p>
+            <div class="slide__img slide_content" style="background-image: url(./img/themew.jpg)"
+              style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+              <p class="dummy"></p>
+              <div
+                style="padding: 0;color: white;display: flex;flex-direction: column;justify-content: end;align-items: center;text-align: center;margin-top: 10vh;height: 80vh;width: 90vw;">
+                <h1 style="font-family: 'Wargate';font-size: max(5vw,6vh);width: 100vw;">PACEM STRIFE</h1>
+                <p style="font-family: 'Wargate';font-size: max(1.5vw,2.3vh);margin-bottom: 20vh;" class="theme_desc">
+                  significance of defence technology as a deterrent to aggression and national security.
+                </p>
               </div>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
               <p class="dummy"></p>
             </div>
           </div>
@@ -199,34 +333,40 @@
                   justify-content: space-around;
                   align-items: center;
                 ">
-              <div>
-                <p>Wissenaire</p>
-                <a href="#">
-                  <h1 style="color: rgb(26, 34, 53) !important">Workshops</h1>
-                </a>
-                <p style="color: rgb(26, 34, 53) !important">
-                  Explore the array of our endless workshops with bundles of
-                  packed fun, technology, and knowledge.
+              <div class="wrk_title">
+                <p style="font-family:'bomber-condensed' !important;font-size: max(3vh,4vw);" class="wrkshps">Workshops
                 </p>
-                <button>Link</button>
+                <h1 style="font-size: max(2vh,1.5vw); max-width: 80vw;
+                text-transform:uppercase;font-family: 'Barlow-Black';word-spacing: 5px;letter-spacing: 2px;"
+                  class="desc_text">Explore the array of endless workshops with bundle of packed fun , technology and
+                  knowledge.
+                </h1>
+                <a href="./pages/workshops/" style="margin-left: 20px;"><button
+                    style="padding: 0;font-family: 'Barlow-Black' ;font-size: max(1.25vw,1.5vh);border: solid 2px rgba(0, 0, 0, 0.17);background: #7a718288;backdrop-filter: blur(1px);border-radius:0 35px;padding: -10px;max-height: 7vh;max-width: max(10vw,15vh);">KNOW
+                    MORE</button></a>
               </div>
               <p class="dummy"></p>
               <p class="dummy"></p>
             </div>
           </div>
-          <div class="slide" id="competetions-slide">
-            <div class="slide__img slide_content" style="background-image: url(./img/comp.jpg)">
+          <div class="slide">
+            <div class="slide__img slide_content" style="background-image: url(./img/main.jpg)">
+              <!--               <video autoplay muted loop id="myVideo" class="slide__img">
+                <source src="./img/theme/lamborgini.mp4" type="video/mp4" />
+              </video> -->
               <div style="color: white !important">
-                <p>Wissenaire</p>
-                <a href="#">
-                  <h1 style="color: white !important">Competitions</h1>
-                </a>
-                <p>
-                  Wissenaire organizes a range of competetions including Robo
-                  Wars, Trekkon, Kick Off, Robo Race,etc.
-                </p>
-                <button>Link</button>
+                <p style="font-family:'bomber-condensed' !important;font-size: max(5vh,6vw);">competetions</p>
+                <h1 style="font-size: max(2vh,1.5vw); max-width: 80vw;
+                text-transform:uppercase;font-family: 'Barlow-Black';word-spacing: 5px;letter-spacing: 2px;"
+                  class="desc_text">Wissenaire organises a range of competitions including robo wars, tekkon, kick off ,
+                  robo race ,etc.
+                </h1>
+                <a href="./pages/competitions/" style="margin-left: 20px;"><button
+                    style="padding: 0;font-family: 'Barlow-Black' ;font-size: max(1.25vw,1.5vh);border: solid 2px rgba(0, 0, 0, 0.17);background: #7a718288;backdrop-filter: blur(1px);border-radius:0 35px;padding: -10px;max-height: 7vh;max-width: max(10vw,15vh);">KNOW
+                    MORE</button></a>
               </div>
+              <p class="dummy"></p>
+              <p class="dummy"></p>
               <p class="dummy"></p>
               <p class="dummy"></p>
             </div>
@@ -242,16 +382,19 @@
                 style="width: 100vw; height: 100vh; object-fit: cover">
                 <source src="./img/reach_us/cut.mp4" type="video/mp4" />
               </video> -->
-              <div style="color: rgb(32, 25, 18) !important">
-                <p>Wissenaire</p>
-                <a href="#">
-                  <h1 style="color: rgb(32, 25, 18) !important">Reach Us</h1>
-                </a>
-                <p>
+              <div style="color: #1f1816 !important;">
+                <p style="font-family:'bomber-condensed' !important;font-size: max(4vh,3vw);margin-top: 10vh;">Reach us
+                </p>
+                <h1 style="font-size: max(2vh,1.25vw); max-width: 80vw;
+                text-transform:uppercase;font-family: 'Barlow-Black';word-spacing: 5px;letter-spacing: 2px;"
+                  class="desc_text">
                   Wissenaire, IIT Bhubaneswar being one of India's most
                   prominent fests, attracts sponsorship from mammoth MNCs
                   every year. To know more please reach us out.
-                </p>
+                </h1>
+                <a href="./pages/reach_Us/" style="margin-left: 20px;"><button
+                    style="padding: 0;font-family: 'Barlow-Black' ;font-size: max(1.25vw,1.5vh);border: solid 2px rgba(0, 0, 0, 0.17);background: #7a718288;backdrop-filter: blur(1px);border-radius:0 35px;padding: -10px;max-height: 7vh;max-width: max(10vw,15vh);">KNOW
+                    MORE</button></a>
               </div>
               <p class="dummy"></p>
               <p class="dummy"></p>

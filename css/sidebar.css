@@ -26,17 +26,49 @@
 	opacity: 0.3;
 	pointer-events: none;
 }
+.hidden{
+	@media screen and (min-width:1000px) {
+		display: none;
+	}
+}
 
+.hid{
+	@media screen and (max-width:1000px) {
+		display: none;
+	}
+}
+.mar_z{
+	@media screen and (max-width:1000px) {
+		margin: 0;
+	}
+}
+@property --a {
+	syntax: "<percentage>";
+	inherits: false;
+	initial-value: -100%;
+}
 .menu__inner {
+	--a:-100%;
 	width: calc(100% + 25px);
 	padding: 0 140px 2em 0;
 	overflow-y: auto;
 	height: 100%;
 	position: relative;
 	z-index: 100;
+	width: max-content !important;
+	padding:0 !important ;
+	margin-top: 11vh;
+	right: var(--a);
+	transition: right ease-in-out 0.5s;
     	padding-left: 100px;
     	padding-top: 30px;
+		>ul{
+	@media screen and (max-width:1000px) {
+		display: none;
+	}
+		}
 }
+
 
 .menu ul {
 	list-style: none;
@@ -100,8 +132,10 @@
     outline: none;
     position: absolute;
     top: 2rem;
-    left: 200px;
     z-index: 2000;
+	@media screen and (max-width:1000px) {
+		display: none;
+	}
 }
 
 .menu--open button.menu__handle{
