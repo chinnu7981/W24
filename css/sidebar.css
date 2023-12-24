@@ -203,7 +203,7 @@
 
 .morph-shape {
 	position: absolute;
-	width: 540px;
+	width: 100vw;
 	height: 100%;
 	top: 0;
 	left: -85px;;
