@@ -15,7 +15,7 @@ body {
   animation: rotate 4s infinite linear;
   transition: all 0.3s ease;
   transition-property: background, transform;
-  transform-origin: 100%, 100%;
+  transform-origin: center;
 }
 
 /* @media screen and (max-width: 1279px) {
@@ -27,26 +27,9 @@ body {
     }
   } */
 
-.main-cur {
-  animation: none;
-  margin: 0px;
-  content: "";
-  width: 0.1px;
-  height: 0.1px;
-  border: 10.5px solid#1A28CF;
-  position: absolute;
-  border-radius: 50%;
-  /* opacity: .5; */
-  top: 4.5px;
-  left: 4.5px;
-  /* transform: translate(-50%, -50%); */
-  animation: cursorAnim 0.5s infinite alternate;
-}
 
 .satelite {
-  height: 30px;
-  margin: 30px;
-  transform: rotate(-1deg);
+  height: 45px;
   /* transition-duration: 200ms;
       transition-timing-function: ease-out;
       */
@@ -89,12 +72,10 @@ body {
 
 .expand {
   animation: cursorClick 0.5s forwards;
-  border: 1px solid blue;
 }
 
 .link-grow {
   transform: scale(2);
-  background: #1a28cf;
 }
 
 @media (hover: none) and (pointer: coarse) {
