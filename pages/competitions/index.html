@@ -7,72 +7,37 @@
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/snap.svg-min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Competitions</title>
 </head>
 <body>
-  <nav>
-    <div class="upper-nav">
-      <a href="#">
-        <div class="navToggle6">
-          <img src="../../PatchWork/wiss.png" alt="" id="wiss_logo_full" />
-          <img src="../../wissicon.png" alt="" id="wiss_logo" />
-          <div class="icon"></div>
+  <button class="navbutton"><i class="fa-solid fa-bars"></i></button>
+    <nav  dir="rtl">
+        <div class="logo" >
+            <a href="#">
+                Wissenaire
+                <i class="fa-solid fa-dice-d20"></i>
+            </a>
         </div>
-        <ul class="navbar">
-          <li>
-            <a href="../../"> Home</a>
-          </li>
-          <li>
-            <a href="../about_us/"> About us</a>
-          </li>
-          <li>
-            <a href="../coming_soon/"> Guests</a>
-          </li>
-          <li>
-            <a href="../coming_soon/"> Exhibits</a>
-          </li>
-          <li>
-            <a href="https://witp.wissenaire.org/"> Winter Internship</a>
-          </li>
-          <li>
-            <a href="../workshops/"> Workshops</a>
-          </li>
-          <li>
-            <a href="../coming_soon/"> Intiatives</a>
-          </li>
-          <li>
-            <a href="../coming_soon/"> Highlights</a>
-          </li>
-          <li>
-            <a href="../teampage/"
-              > Team</a
-            >
-          </li>
-          <li>
-            <a href="https://chinnu7981.github.io/W24/pages/coming_soon/"
-              > Sponsors</a
-            >
-          </li>
-          <li>
-            <a href="../reach_Us/"> Reach us</a>
-          </li>
+        <ul>
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">sahisj</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">1</a></li>
+
         </ul>
-      </a>
-    </div>
-    <link
-      href="https://fonts.googleapis.com/css?family=Oswald:300"
-      rel="stylesheet"
-      type="text/css" />
-    <div class="over-voer"></div>
-    <!-- <div class='background'></div> -->
-  </nav>
+    </nav>
   <br>
   <br>
   <br>
   <br>
   <br>
   <br>
-  
+
   <h1 style="margin-left: 20px; font-size: xx-large;text-align: center;">COMPETITIONS</h1>
     <div class="container">
 
@@ -1085,16 +1050,15 @@ Who doesn’t love the adrenaline rush when you are almost at the finish line? H
 
 			})();
 		</script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
     <script>
-      $(document).ready(function () {
-        $(".navToggle6").click(function () {
-          $(".navbar").toggle("slide");
-          $(this).toggleClass("open");
-          $(".background").toggleClass("open");
-        });
-      });
+      const nav = document.querySelector('nav');
+      const btn = document.querySelector('button');
+
+      btn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        btn.classList.toggle('active');
+      })
     </script>
 
 </body>
