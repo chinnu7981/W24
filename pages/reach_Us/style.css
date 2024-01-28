@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
 }
-html{
+html {
   background-color: #191919;
 }
 
@@ -23,6 +23,143 @@ html {
   align-content: center;
 }
 
+.containerg {
+  cursor: pointer;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 30px;
+  height: 20px;
+}
+
+.bars {
+  width: 30px;
+  height: 4px;
+  background: #fff;
+}
+
+.bars::before,
+.bars::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+}
+
+.bars::before {
+  margin-top: 9px;
+}
+
+.bars::after {
+  margin-top: 18px;
+}
+
+nav.lap {
+  z-index: 99;
+  font-size: 3vh;
+  position: fixed;
+  top: 0;
+  padding: 0 !important;
+  height: 30px;
+  transform: scaleX(1);
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: right;
+}
+
+nav.lap ul {
+  list-style: none;
+}
+
+nav.lap ul li {
+  padding: 0;
+  text-align: left;
+  margin: 20px 0;
+}
+
+nav.lap ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+}
+
+nav.lap ul li a:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 3px;
+  border-radius: 5px;
+  background: #fff;
+  bottom: -10px;
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.5s ease;
+  transform: scaleX(0);
+}
+
+nav.lap ul li a:hover:after {
+  transform: scaleX(1);
+}
+
+nav.lap .close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 6%;
+  right: 5%;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+}
+
+nav.lap h2 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  opacity: 0;
+  pointer-events: none;
+  color: #fff;
+  font-size: 2em;
+}
+
+nav.lap .close div::before,
+nav.lap .close div::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #fff;
+  transition: background 0.5s ease;
+}
+nav.lap .close div::before {
+  transform: rotate(-45deg) translateX(-10px) translateY(-10px);
+}
+
+nav.lap .close div::after {
+  transform: rotate(45deg) translateX(-10px) translateY(10px);
+}
+
+nav.lap .close:hover div::before,
+nav.lap .close:hover div::after {
+  background: rgb(209, 3, 3);
+}
+
+@media screen and (max-width: 1000px) {
+  .laptop {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .lap {
+    display: none;
+  }
+}
 video {
   top: 0;
   width: auto;
@@ -190,7 +327,6 @@ li {
   display: block;
   font-weight: bold;
   font-size: x-large;
-  margin-top: 1.5em;
 }
 
 .card {

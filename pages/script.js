@@ -5,7 +5,7 @@ document.addEventListener("mousemove", (e) => {
   let y = e.pageY;
   cursors.setAttribute(
     "style",
-    "top: " + (e.pageY-12.5) + "px; left: " + (e.pageX-12.5) + "px;"
+    "top: " + (e.pageY-23 ) + "px; left: " + (e.pageX-23) + "px;"
   );
 });
 

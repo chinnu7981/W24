@@ -1,765 +1,671 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Workshops | Wissenaire'24</title>
-    <meta
-      name="description"
-      content="A simple page transition where a large image animates to a content area." />
-    <meta
-      name="keywords"
-      content="gsap, flip, javascript, animation, page transition" />
-    <meta name="author" content="Codrops" />
-    <link rel="shortcut icon" href="./favicon.824cf0c5.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://use.typekit.net/ckf7ljy.css" />
-    <link rel="stylesheet" type="text/css" href="./index.d046a61c.css" />
-    <script>
-      document.documentElement.className = "js";
-      var supportsCssVars = function () {
-        var e,
-          t = document.createElement("style");
-        return (
-          (t.innerHTML = "root: { --tmp-var: bold; }"),
-          document.head.appendChild(t),
-          (e = !!(
-            window.CSS &&
-            window.CSS.supports &&
-            window.CSS.supports("font-weight", "var(--tmp-var)")
-          )),
-          t.parentNode.removeChild(t),
-          e
-        );
-      };
-      supportsCssVars() ||
-        alert(
-          "Please view this demo in a modern browser that supports CSS Variables."
-        );
-    </script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".navToggle6").click(function () {
-          $(".navbar").toggle("slide");
-          $(this).toggleClass("open");
-          $(".background").toggleClass("open");
-        });
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Workshops | Wissenaire'24</title>
+  <meta name="description" content="A simple page transition where a large image animates to a content area." />
+  <meta name="keywords" content="gsap, flip, javascript, animation, page transition" />
+  <meta name="author" content="Codrops" />
+  <link rel="shortcut icon" href="./favicon.824cf0c5.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://use.typekit.net/ckf7ljy.css" />
+  <link rel="stylesheet" type="text/css" href="./index.d046a61c.css" />
+  <link rel="stylesheet" href="../../css/cursor.css">
+  <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function () {
+      var e,
+        t = document.createElement("style");
+      return (
+        (t.innerHTML = "root: { --tmp-var: bold; }"),
+        document.head.appendChild(t),
+        (e = !!(
+          window.CSS &&
+          window.CSS.supports &&
+          window.CSS.supports("font-weight", "var(--tmp-var)")
+        )),
+        t.parentNode.removeChild(t),
+        e
+      );
+    };
+    supportsCssVars() ||
+      alert(
+        "Please view this demo in a modern browser that supports CSS Variables."
+      );
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".navToggle6").click(function () {
+        $(".navbar").toggle("slide");
+        $(this).toggleClass("open");
+        $(".background").toggleClass("open");
       });
-    </script>
-  </head>
+    });
+  </script>
+</head>
 
-  <body class="loading">
-    <button class="navbutton" style="z-index: 1000;"><i class="fa-solid fa-bars"></i></button>
-      <nav  dir="rtl">
-          <div class="logo" >
-              <a href="../../">
-                  Wissenaire
-<!--                   <i class="fa-solid fa-dice-d20"></i> -->
-              </a>
-          </div>
-          <ul>
+<body class="loading">
+  <button class="navbutton laptop" style="z-index: 1000;"><i class="fa-solid fa-bars"></i></button>
+  <nav dir="rtl laptop">
+    <div class="logo">
+      <a href="../../">
+        Wissenaire
+        <!--                   <i class="fa-solid fa-dice-d20"></i> -->
+      </a>
+    </div>
+    <ul>
 
-            <li><a href="../competitions/">Competitions</a></li>
-            <li><a href="../coming_soon/">Guests</a></li>
-            <li><a href="../coming_soon/">Exhibits</a></li>
-            <li><a href="https://witp.wissenaire.org/">Winter Internship</a></li>
-            <li><a href="../workshops/">Workshops</a></li>
-            <li><a href="../coming_soon/">Intiatives</a></li>
-            <li><a href="../coming_soon/">Highlights</a></a></li>
-            <li><a href="../teampage/">Team</a></li>
-            <li><a href="../coming_soon/">Sponsors</a></li>
-            <li><a href="../reach_Us/">Reach Us</a></li>
+      <li><a href="../competitions/">Competitions</a></li>
+      <li><a href="../coming_soon/">Guests</a></li>
+      <li><a href="../coming_soon/">Exhibits</a></li>
+      <li><a href="https://witp.wissenaire.org/">Winter Internship</a></li>
+      <li><a href="../workshops/">Workshops</a></li>
+      <li><a href="../coming_soon/">Intiatives</a></li>
+      <li><a href="../coming_soon/">Highlights</a></a></li>
+      <li><a href="../teampage/">Team</a></li>
+      <li><a href="../coming_soon/">Sponsors</a></li>
+      <li><a href="../reach_Us/">Reach Us</a></li>
 
-          </ul>
-      </nav>
-    <br />
-    <br />
+    </ul>
+  </nav>
+  <div class="containerg lap">
+    <div class="bars"></div>
+  </div>
 
-    <h1 style="text-align: center; margin-top: 5vh" id="main-heading">
-      WORKSHOPS
-    </h1>
-    <p style="color: red" id="dumb-user">Click on the image for more info</p>
+  <nav class="lap" style="top: 0 !important;width: 100vw;">
+    <div class="close">
+      <div></div>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">competetions</a></li>
+      <li><a href="#">reach us</a></li>
+      <li><a href="#">guests</a></li>
+      <li><a href="#">exhibits</a></li>
+      <li><a href="#">winter internship</a></li>
+      <li><a href="#">workshops</a></li>
+      <li><a href="#">initiatives</a></li>
+      <li><a href="#">highlights</a></li>
+      <li><a href="#">team</a></li>
+      <li><a href="#">sponsors</a></li>
+    </ul>
+  </nav>
+  <div class="cur" id="circle" style="position: absolute;">
+    <img class="satelite" src="../../Untitled-1 (1).png" alt="" />
+  </div>
 
-    <main>
-      <section class="preview-wrap">
-        <div class="preview">
-          <div class="preview__img-wrap">
-            <div class="preview__img">
-              <div
-                class="preview__img-inner"
-                style="background-image: url('rcairplane.jpg')"></div>
-            </div>
-          </div>
-          <div class="preview__title">
-            <h2 class="preview__title-main">
-              <!-- <span class="oh"><span class="oh__inner">RC </span></span> -->
-              <span class="oh"
-                ><span class="oh__inner">R C Aircraft Design</span></span
-              >
-            </h2>
-            <p class="preview__desc">
-              A volcanic rock of intermediate composition, between silica-poor
-              basalt and silica-rich rhyolite.
-            </p>
-            <button disabled="disabled">Click Here</button>
-          </div>
-        </div>
-        <div class="preview">
-          <div class="preview__img-wrap">
-            <div class="preview__img">
-              <div
-                class="preview__img-inner"
-                style="background-image: url('staddpro.jpg')"></div>
-            </div>
-          </div>
-          <div class="preview__title">
-            <h2 class="preview__title-main">
-              <span class="oh"><span class="oh__inner">Stadd Pro </span></span>
-              <!-- <span class="oh"><span class="oh__inner">plutonic</span></span> -->
-            </h2>
-            <p class="preview__desc">
-              A large mass of intrusive igneous rock made mostly of felsic or
-              intermediate rock types.
-            </p>
-          </div>
-        </div>
-        <div class="preview">
-          <div class="preview__img-wrap">
-            <div class="preview__img">
-              <div
-                class="preview__img-inner"
-                style="background-image: url('./img/it.jpg')"></div>
-            </div>
-          </div>
-          <div class="preview__title">
-            <h2 class="preview__title-main">
-              <!-- <span class="oh"><span class="oh__inner"></span></span> -->
-              <span class="oh"
-                ><span class="oh__inner">IT For Business Managers</span></span
-              >
-            </h2>
-            <p class="preview__desc">
-              a volcanic rock that consists of highly vesicular rough-textured
-              volcanic glass.
-            </p>
-          </div>
-        </div>
-        <div class="preview">
-          <div class="preview__img-wrap">
-            <div class="preview__img">
-              <div
-                class="preview__img-inner"
-                style="background-image: url('./img/datsci.jpg')"></div>
-            </div>
-          </div>
-          <div class="preview__title">
-            <h2 class="preview__title-main">
-              <span class="oh"><span class="oh__inner">AI ML</span></span>
-              <!-- <span class="oh"><span class="oh__inner">aphyric</span></span> -->
-            </h2>
-            <p class="preview__desc">
-              An igneous, volcanic rock, with aphanitic-aphyric to
-              aphyric-porphyritic texture.
-            </p>
-          </div>
-        </div>
-        <div class="preview">
-          <div class="preview__img-wrap">
-            <div class="preview__img">
-              <div
-                class="preview__img-inner"
-                style="background-image: url('./img/digmar.jpg')"></div>
-            </div>
-          </div>
-          <div class="preview__title">
-            <h2 class="preview__title-main">
-              <span class="oh"
-                ><span class="oh__inner">Digital Marketing </span></span
-              >
-              <!-- <span class="oh"><span class="oh__inner">marketing </span></span> -->
-            </h2>
-            <p class="preview__desc">
-              A volcanic rock with gray-white large porphyritic rhombus-shaped
-              phenocrysts of feldspar.
-            </p>
-          </div>
-        </div>
-        <div class="preview">
-          <div class="preview__img-wrap">
-            <div class="preview__img">
-              <div
-                class="preview__img-inner"
-                style="background-image: url('./img/iot.jpg')"></div>
-            </div>
-          </div>
-          <div class="preview__title">
-            <h2 class="preview__title-main">
-              <span class="oh"
-                ><span class="oh__inner">Robotics and Iot </span></span
-              >
-              <!-- <span class="oh"><span class="oh__inner">triclinic</span></span> -->
-            </h2>
-            <p class="preview__desc">
-              a calcium rich member of the plagioclase solid solution series of
-              feldspar minerals.
-            </p>
-          </div>
-        </div>
-        <div class="preview">
-          <div class="preview__img-wrap">
-            <div class="preview__img">
-              <div
-                class="preview__img-inner"
-                style="background-image: url('./img/cybsec.jpg')"></div>
-            </div>
-          </div>
-          <div class="preview__title">
-            <h2 class="preview__title-main">
-              <span class="oh"
-                ><span class="oh__inner"
-                  >Cybersecurity and ethical hacking
-                </span></span
-              >
-              <!-- <span class="oh"><span class="oh__inner">plagioclase</span></span> -->
-            </h2>
-            <p class="preview__desc">
-              A rock-forming mineral belonging to the plagioclase feldspars.
-            </p>
-          </div>
-        </div>
-        <div class="preview">
-          <div class="preview__img-wrap">
-            <div class="preview__img">
-              <div
-                class="preview__img-inner"
-                style="background-image: url('./img/datsci.jpg')"></div>
-            </div>
-          </div>
-          <div class="preview__title">
-            <h2 class="preview__title-main">
-              <span class="oh"
-                ><span class="oh__inner">Data science </span></span
-              >
-              <!-- <span class="oh"><span class="oh__inner">fibrous</span></span> -->
-            </h2>
-            <p class="preview__desc">
-              An abundant zeolite mineral that is used commercially.
-            </p>
-          </div>
-        </div>
-        <div class="preview">
-          <div class="preview__img-wrap">
-            <div class="preview__img">
-              <div
-                class="preview__img-inner"
-                style="background-image: url('./img/uiux.jpg')"></div>
-            </div>
-          </div>
-          <div class="preview__title">
-            <h2 class="preview__title-main">
-              <!-- <span class="oh"><span class="oh__inner"></span></span> -->
-              <span class="oh"
-                ><span class="oh__inner"> Product Development UI/UX</span></span
-              >
-            </h2>
-            <p class="preview__desc">
-              An extremely hard, dense tetragonal form of silicon dioxide.
-            </p>
-          </div>
-        </div>
-        <div class="preview">
-          <div class="preview__img-wrap">
-            <div class="preview__img">
-              <div
-                class="preview__img-inner"
-                style="background-image: url('1.a45131b3.jpg')"></div>
-            </div>
-          </div>
-          <div class="preview__title">
-            <h2 class="preview__title-main">
-              <span class="oh"><span class="oh__inner">RC </span></span>
-              <span class="oh"
-                ><span class="oh__inner">Aircraft design</span></span
-              >
-            </h2>
-            <p class="preview__desc">
-              A volcanic rock of intermediate composition, between silica-poor
-              basalt and silica-rich rhyolite.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="content-wrap">
-        <div class="content">
-          <div class="content__group">
-            <div class="content__title">
-              <!-- <span class="oh"><span class="oh__inner">RC</span></span> -->
-              <span class="oh"
-                ><span class="oh__inner" style="font-size: 35px">
-                  R C Aircraft design</span
-                ></span
-              >
-            </div>
+  <h1 style="text-align: center; margin-top: 5vh" id="main-heading">
+    WORKSHOPS
+  </h1>
+  <p style="color: red" id="dumb-user">Click on the image for more info</p>
 
-            <div class="content__text">
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(227, 57, 45, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Download Now</span>
-                </span>
-              </button>
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(227, 57, 45, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Register</span>
-                </span>
-              </button>
-            </div>
-          </div>
-          <div class="content__thumbs" style="align-items: center">
-            <div
-              class="content__thumbs-item"
-              style="background-image: url('1_1.f77613a9.jpg')"></div>
-            <div class="content__thumbs-item">
-              <p>Nihal</p>
-              <p>7416527870</p>
-            </div>
+  <main>
+    <section class="preview-wrap">
+      <div class="preview">
+        <div class="preview__img-wrap">
+          <div class="preview__img">
+            <div class="preview__img-inner" style="background-image: url('rcairplane.jpg')"></div>
           </div>
         </div>
-        <div class="content">
-          <div class="content__group">
-            <div class="content__title">
-              <span class="oh"
-                ><span class="oh__inner" style="font-size: 45px"
-                  >Stadd Pro</span
-                ></span
-              >
-              <!-- <span class="oh"><span class="oh__inner">plutonic</span></span> -->
-            </div>
-            <div class="content__text">
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(50, 92, 143, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Download Now</span>
-                </span>
-              </button>
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(50, 92, 143, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Register</span>
-                </span>
-              </button>
-            </div>
-          </div>
-          <div class="content__thumbs" style="align-items: center">
-            <div
-              class="content__thumbs-item"
-              style="background-image: url('1_1.f77613a9.jpg')"></div>
-            <div class="content__thumbs-item">
-              <p>Nihal</p>
-              <p>7416527870</p>
-            </div>
+        <div class="preview__title">
+          <h2 class="preview__title-main">
+            <!-- <span class="oh"><span class="oh__inner">RC </span></span> -->
+            <span class="oh"><span class="oh__inner">R C Aircraft Design</span></span>
+          </h2>
+          <p class="preview__desc">
+            A volcanic rock of intermediate composition, between silica-poor
+            basalt and silica-rich rhyolite.
+          </p>
+          <button disabled="disabled">Click Here</button>
+        </div>
+      </div>
+      <div class="preview">
+        <div class="preview__img-wrap">
+          <div class="preview__img">
+            <div class="preview__img-inner" style="background-image: url('staddpro.jpg')"></div>
           </div>
         </div>
-        <div class="content">
-          <div class="content__group">
-            <div class="content__title">
-              <!-- <span class="oh"><span class="oh__inner">IT </span></span> -->
-              <span class="oh"
-                ><span
-                  class="oh__inner"
-                  style="
+        <div class="preview__title">
+          <h2 class="preview__title-main">
+            <span class="oh"><span class="oh__inner">Stadd Pro </span></span>
+            <!-- <span class="oh"><span class="oh__inner">plutonic</span></span> -->
+          </h2>
+          <p class="preview__desc">
+            A large mass of intrusive igneous rock made mostly of felsic or
+            intermediate rock types.
+          </p>
+        </div>
+      </div>
+      <div class="preview">
+        <div class="preview__img-wrap">
+          <div class="preview__img">
+            <div class="preview__img-inner" style="background-image: url('./img/it.jpg')"></div>
+          </div>
+        </div>
+        <div class="preview__title">
+          <h2 class="preview__title-main">
+            <!-- <span class="oh"><span class="oh__inner"></span></span> -->
+            <span class="oh"><span class="oh__inner">IT For Business Managers</span></span>
+          </h2>
+          <p class="preview__desc">
+            a volcanic rock that consists of highly vesicular rough-textured
+            volcanic glass.
+          </p>
+        </div>
+      </div>
+      <div class="preview">
+        <div class="preview__img-wrap">
+          <div class="preview__img">
+            <div class="preview__img-inner" style="background-image: url('./img/datsci.jpg')"></div>
+          </div>
+        </div>
+        <div class="preview__title">
+          <h2 class="preview__title-main">
+            <span class="oh"><span class="oh__inner">AI ML</span></span>
+            <!-- <span class="oh"><span class="oh__inner">aphyric</span></span> -->
+          </h2>
+          <p class="preview__desc">
+            An igneous, volcanic rock, with aphanitic-aphyric to
+            aphyric-porphyritic texture.
+          </p>
+        </div>
+      </div>
+      <div class="preview">
+        <div class="preview__img-wrap">
+          <div class="preview__img">
+            <div class="preview__img-inner" style="background-image: url('./img/digmar.jpg')"></div>
+          </div>
+        </div>
+        <div class="preview__title">
+          <h2 class="preview__title-main">
+            <span class="oh"><span class="oh__inner">Digital Marketing </span></span>
+            <!-- <span class="oh"><span class="oh__inner">marketing </span></span> -->
+          </h2>
+          <p class="preview__desc">
+            A volcanic rock with gray-white large porphyritic rhombus-shaped
+            phenocrysts of feldspar.
+          </p>
+        </div>
+      </div>
+      <div class="preview">
+        <div class="preview__img-wrap">
+          <div class="preview__img">
+            <div class="preview__img-inner" style="background-image: url('./img/iot.jpg')"></div>
+          </div>
+        </div>
+        <div class="preview__title">
+          <h2 class="preview__title-main">
+            <span class="oh"><span class="oh__inner">Robotics and Iot </span></span>
+            <!-- <span class="oh"><span class="oh__inner">triclinic</span></span> -->
+          </h2>
+          <p class="preview__desc">
+            a calcium rich member of the plagioclase solid solution series of
+            feldspar minerals.
+          </p>
+        </div>
+      </div>
+      <div class="preview">
+        <div class="preview__img-wrap">
+          <div class="preview__img">
+            <div class="preview__img-inner" style="background-image: url('./img/cybsec.jpg')"></div>
+          </div>
+        </div>
+        <div class="preview__title">
+          <h2 class="preview__title-main">
+            <span class="oh"><span class="oh__inner">Cybersecurity and ethical hacking
+              </span></span>
+            <!-- <span class="oh"><span class="oh__inner">plagioclase</span></span> -->
+          </h2>
+          <p class="preview__desc">
+            A rock-forming mineral belonging to the plagioclase feldspars.
+          </p>
+        </div>
+      </div>
+      <div class="preview">
+        <div class="preview__img-wrap">
+          <div class="preview__img">
+            <div class="preview__img-inner" style="background-image: url('./img/datsci.jpg')"></div>
+          </div>
+        </div>
+        <div class="preview__title">
+          <h2 class="preview__title-main">
+            <span class="oh"><span class="oh__inner">Data science </span></span>
+            <!-- <span class="oh"><span class="oh__inner">fibrous</span></span> -->
+          </h2>
+          <p class="preview__desc">
+            An abundant zeolite mineral that is used commercially.
+          </p>
+        </div>
+      </div>
+      <div class="preview">
+        <div class="preview__img-wrap">
+          <div class="preview__img">
+            <div class="preview__img-inner" style="background-image: url('./img/uiux.jpg')"></div>
+          </div>
+        </div>
+        <div class="preview__title">
+          <h2 class="preview__title-main">
+            <!-- <span class="oh"><span class="oh__inner"></span></span> -->
+            <span class="oh"><span class="oh__inner"> Product Development UI/UX</span></span>
+          </h2>
+          <p class="preview__desc">
+            An extremely hard, dense tetragonal form of silicon dioxide.
+          </p>
+        </div>
+      </div>
+      <div class="preview">
+        <div class="preview__img-wrap">
+          <div class="preview__img">
+            <div class="preview__img-inner" style="background-image: url('1.a45131b3.jpg')"></div>
+          </div>
+        </div>
+        <div class="preview__title">
+          <h2 class="preview__title-main">
+            <span class="oh"><span class="oh__inner">RC </span></span>
+            <span class="oh"><span class="oh__inner">Aircraft design</span></span>
+          </h2>
+          <p class="preview__desc">
+            A volcanic rock of intermediate composition, between silica-poor
+            basalt and silica-rich rhyolite.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="content-wrap">
+      <div class="content">
+        <div class="content__group">
+          <div class="content__title">
+            <!-- <span class="oh"><span class="oh__inner">RC</span></span> -->
+            <span class="oh"><span class="oh__inner" style="font-size: 35px">
+                R C Aircraft design</span></span>
+          </div>
+
+          <div class="content__text">
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(227, 57, 45, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Download Now</span>
+              </span>
+            </button>
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(227, 57, 45, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Register</span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="content__thumbs" style="align-items: center">
+          <div class="content__thumbs-item" style="background-image: url('1_1.f77613a9.jpg')"></div>
+          <div class="content__thumbs-item">
+            <p>Nihal</p>
+            <p>7416527870</p>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__group">
+          <div class="content__title">
+            <span class="oh"><span class="oh__inner" style="font-size: 45px">Stadd Pro</span></span>
+            <!-- <span class="oh"><span class="oh__inner">plutonic</span></span> -->
+          </div>
+          <div class="content__text">
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(50, 92, 143, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Download Now</span>
+              </span>
+            </button>
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(50, 92, 143, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Register</span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="content__thumbs" style="align-items: center">
+          <div class="content__thumbs-item" style="background-image: url('1_1.f77613a9.jpg')"></div>
+          <div class="content__thumbs-item">
+            <p>Nihal</p>
+            <p>7416527870</p>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__group">
+          <div class="content__title">
+            <!-- <span class="oh"><span class="oh__inner">IT </span></span> -->
+            <span class="oh"><span class="oh__inner" style="
                     font-size: 25px;
                     margin-bottom: 2.5vh;
                     margin-top: 1.5vh;
-                  "
-                  >IT for Business Managers</span
-                ></span
-              >
-            </div>
-            <div class="content__text">
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(4, 29, 56, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Download Now</span>
-                </span>
-              </button>
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(4, 29, 56, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Register</span>
-                </span>
-              </button>
-            </div>
+                  ">IT for Business Managers</span></span>
           </div>
-          <div class="content__thumbs" style="align-items: center">
-            <div
-              class="content__thumbs-item"
-              style="background-image: url('1_1.f77613a9.jpg')"></div>
-            <div class="content__thumbs-item">
-              <p>Nihal</p>
-              <p>7416527870</p>
-            </div>
+          <div class="content__text">
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(4, 29, 56, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Download Now</span>
+              </span>
+            </button>
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(4, 29, 56, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Register</span>
+              </span>
+            </button>
           </div>
         </div>
-        <div class="content">
-          <div class="content__group">
-            <div class="content__title">
-              <span class="oh"><span class="oh__inner">AI ML</span></span>
-              <!-- <span class="oh"><span class="oh__inner">aphyric</span></span> -->
-            </div>
-            <div class="content__text">
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(20, 192, 222, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Download Now</span>
-                </span>
-              </button>
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(20, 192, 222, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Register</span>
-                </span>
-              </button>
-            </div>
-          </div>
-          <div class="content__thumbs" style="align-items: center">
-            <div
-              class="content__thumbs-item"
-              style="background-image: url('1_1.f77613a9.jpg')"></div>
-            <div class="content__thumbs-item">
-              <p>Nihal</p>
-              <p>7416527870</p>
-            </div>
+        <div class="content__thumbs" style="align-items: center">
+          <div class="content__thumbs-item" style="background-image: url('1_1.f77613a9.jpg')"></div>
+          <div class="content__thumbs-item">
+            <p>Nihal</p>
+            <p>7416527870</p>
           </div>
         </div>
-        <div class="content">
-          <div class="content__group">
-            <div class="content__title">
-              <span class="oh"
-                ><span class="oh__inner" style="font-size: 38px"
-                  >Digital Marketing</span
-                ></span
-              >
-              <!-- <span class="oh"><span class="oh__inner">marketing </span></span> -->
-            </div>
-            <div class="content__text">
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(0, 102, 117, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Download Now</span>
-                </span>
-              </button>
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(0, 102, 117, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Register</span>
-                </span>
-              </button>
-            </div>
+      </div>
+      <div class="content">
+        <div class="content__group">
+          <div class="content__title">
+            <span class="oh"><span class="oh__inner">AI ML</span></span>
+            <!-- <span class="oh"><span class="oh__inner">aphyric</span></span> -->
           </div>
-          <div class="content__thumbs" style="align-items: center">
-            <div
-              class="content__thumbs-item"
-              style="background-image: url('1_1.f77613a9.jpg')"></div>
-            <div class="content__thumbs-item">
-              <p>Nihal</p>
-              <p>7416527870</p>
-            </div>
+          <div class="content__text">
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(20, 192, 222, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Download Now</span>
+              </span>
+            </button>
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(20, 192, 222, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Register</span>
+              </span>
+            </button>
           </div>
         </div>
-        <div class="content">
-          <div class="content__group">
-            <div class="content__title">
-              <span class="oh"
-                ><span class="oh__inner" style="font-size: 45px"
-                  >Robotics and Iot
-                </span></span
-              >
-              <!-- <span class="oh"><span class="oh__inner">triclinic</span></span> -->
-            </div>
-            <div class="content__text">
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(131, 212, 235, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Download Now</span>
-                </span>
-              </button>
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(131, 212, 235, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Register</span>
-                </span>
-              </button>
-            </div>
-          </div>
-          <div class="content__thumbs" style="align-items: center">
-            <div
-              class="content__thumbs-item"
-              style="background-image: url('1_1.f77613a9.jpg')"></div>
-            <div class="content__thumbs-item">
-              <p>Nihal</p>
-              <p>7416527870</p>
-            </div>
+        <div class="content__thumbs" style="align-items: center">
+          <div class="content__thumbs-item" style="background-image: url('1_1.f77613a9.jpg')"></div>
+          <div class="content__thumbs-item">
+            <p>Nihal</p>
+            <p>7416527870</p>
           </div>
         </div>
-        <div class="content">
-          <div class="content__group">
-            <div class="content__title">
-              <span class="oh"
-                ><span class="oh__inner" style="font-size: 35px"
-                  >Cybersecurity and ethical hackinng</span
-                ></span
-              >
-              <!-- <span class="oh"><span class="oh__inner">plagioclase</span></span> -->
-            </div>
-            <div class="content__text">
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(10, 83, 171, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Download Now</span>
-                </span>
-              </button>
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(10, 83, 171, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Register</span>
-                </span>
-              </button>
-            </div>
+      </div>
+      <div class="content">
+        <div class="content__group">
+          <div class="content__title">
+            <span class="oh"><span class="oh__inner" style="font-size: 38px">Digital Marketing</span></span>
+            <!-- <span class="oh"><span class="oh__inner">marketing </span></span> -->
           </div>
-          <div class="content__thumbs" style="align-items: center">
-            <div
-              class="content__thumbs-item"
-              style="background-image: url('1_1.f77613a9.jpg')"></div>
-            <div class="content__thumbs-item">
-              <p>Nihal</p>
-              <p>7416527870</p>
-            </div>
+          <div class="content__text">
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(0, 102, 117, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Download Now</span>
+              </span>
+            </button>
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(0, 102, 117, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Register</span>
+              </span>
+            </button>
           </div>
         </div>
-        <div class="content">
-          <div class="content__group">
-            <div class="content__title">
-              <span class="oh"
-                ><span class="oh__inner" style="font-size: 50px"
-                  >Data science
-                </span></span
-              >
-              <!-- <span class="oh"><span class="oh__inner">fibrous</span></span> -->
-            </div>
-            <div class="content__text">
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(5, 76, 181, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Download Now</span>
-                </span>
-              </button>
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(5, 76, 181, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Register</span>
-                </span>
-              </button>
-            </div>
-          </div>
-          <div class="content__thumbs" style="align-items: center">
-            <div
-              class="content__thumbs-item"
-              style="background-image: url('1_1.f77613a9.jpg')"></div>
-            <div class="content__thumbs-item">
-              <p>Nihal</p>
-              <p>7416527870</p>
-            </div>
+        <div class="content__thumbs" style="align-items: center">
+          <div class="content__thumbs-item" style="background-image: url('1_1.f77613a9.jpg')"></div>
+          <div class="content__thumbs-item">
+            <p>Nihal</p>
+            <p>7416527870</p>
           </div>
         </div>
-        <div class="content">
-          <div class="content__group">
-            <div class="content__title">
-              <span class="oh"
-                ><span class="oh__inner" style="font-size: 35px"
-                  >Product Development UI/UX
-                </span></span
-              >
-              <!-- <span class="oh"><span class="oh__inner">UIUX</span></span> -->
-            </div>
-            <div class="content__text">
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(5, 76, 181, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Download Now</span>
-                </span>
-              </button>
-              <button class="button">
-                <span
-                  class="button_lg"
-                  style="background-color: rgba(5, 76, 181, 0.5)">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Register</span>
-                </span>
-              </button>
-            </div>
+      </div>
+      <div class="content">
+        <div class="content__group">
+          <div class="content__title">
+            <span class="oh"><span class="oh__inner" style="font-size: 45px">Robotics and Iot
+              </span></span>
+            <!-- <span class="oh"><span class="oh__inner">triclinic</span></span> -->
           </div>
-          <div class="content__thumbs" style="align-items: center">
-            <div
-              class="content__thumbs-item"
-              style="background-image: url('1_1.f77613a9.jpg')"></div>
-            <div class="content__thumbs-item">
-              <p>Nihal</p>
-              <p>7416527870</p>
-            </div>
+          <div class="content__text">
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(131, 212, 235, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Download Now</span>
+              </span>
+            </button>
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(131, 212, 235, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Register</span>
+              </span>
+            </button>
           </div>
         </div>
-        <div class="content">
-          <div class="content__group">
-            <div class="content__title">
-              <span class="oh"><span class="oh__inner">Andesite</span></span>
-              <span class="oh"><span class="oh__inner">aphanitic</span></span>
-            </div>
-            <div class="content__text">
-              <button>Register</button>
-              <button>Download</button>
-            </div>
-          </div>
-          <div class="content__thumbs" style="align-items: center">
-            <div
-              class="content__thumbs-item"
-              style="background-image: url('1_1.f77613a9.jpg')"></div>
-            <div class="content__thumbs-item">
-              <p>Nihal</p>
-              <p>7416527870</p>
-            </div>
+        <div class="content__thumbs" style="align-items: center">
+          <div class="content__thumbs-item" style="background-image: url('1_1.f77613a9.jpg')"></div>
+          <div class="content__thumbs-item">
+            <p>Nihal</p>
+            <p>7416527870</p>
           </div>
         </div>
-        <button class="unbutton action action--back">
-          <svg width="25px" height="25px" viewbox="0 0 25 25">
-            <path
-              d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"></path>
-          </svg>
-          <span>Go back</span>
-        </button>
-      </section>
-    </main>
-    <div style="width: 100%; display: flex;align-items: center;justify-content: center;flex-direction: column;margin:20px 0 50px 0;">
+      </div>
+      <div class="content">
+        <div class="content__group">
+          <div class="content__title">
+            <span class="oh"><span class="oh__inner" style="font-size: 35px">Cybersecurity and ethical
+                hackinng</span></span>
+            <!-- <span class="oh"><span class="oh__inner">plagioclase</span></span> -->
+          </div>
+          <div class="content__text">
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(10, 83, 171, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Download Now</span>
+              </span>
+            </button>
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(10, 83, 171, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Register</span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="content__thumbs" style="align-items: center">
+          <div class="content__thumbs-item" style="background-image: url('1_1.f77613a9.jpg')"></div>
+          <div class="content__thumbs-item">
+            <p>Nihal</p>
+            <p>7416527870</p>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__group">
+          <div class="content__title">
+            <span class="oh"><span class="oh__inner" style="font-size: 50px">Data science
+              </span></span>
+            <!-- <span class="oh"><span class="oh__inner">fibrous</span></span> -->
+          </div>
+          <div class="content__text">
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(5, 76, 181, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Download Now</span>
+              </span>
+            </button>
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(5, 76, 181, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Register</span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="content__thumbs" style="align-items: center">
+          <div class="content__thumbs-item" style="background-image: url('1_1.f77613a9.jpg')"></div>
+          <div class="content__thumbs-item">
+            <p>Nihal</p>
+            <p>7416527870</p>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__group">
+          <div class="content__title">
+            <span class="oh"><span class="oh__inner" style="font-size: 35px">Product Development UI/UX
+              </span></span>
+            <!-- <span class="oh"><span class="oh__inner">UIUX</span></span> -->
+          </div>
+          <div class="content__text">
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(5, 76, 181, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Download Now</span>
+              </span>
+            </button>
+            <button class="button">
+              <span class="button_lg" style="background-color: rgba(5, 76, 181, 0.5)">
+                <span class="button_sl"></span>
+                <span class="button_text">Register</span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="content__thumbs" style="align-items: center">
+          <div class="content__thumbs-item" style="background-image: url('1_1.f77613a9.jpg')"></div>
+          <div class="content__thumbs-item">
+            <p>Nihal</p>
+            <p>7416527870</p>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__group">
+          <div class="content__title">
+            <span class="oh"><span class="oh__inner">Andesite</span></span>
+            <span class="oh"><span class="oh__inner">aphanitic</span></span>
+          </div>
+          <div class="content__text">
+            <button>Register</button>
+            <button>Download</button>
+          </div>
+        </div>
+        <div class="content__thumbs" style="align-items: center">
+          <div class="content__thumbs-item" style="background-image: url('1_1.f77613a9.jpg')"></div>
+          <div class="content__thumbs-item">
+            <p>Nihal</p>
+            <p>7416527870</p>
+          </div>
+        </div>
+      </div>
+      <button class="unbutton action action--back">
+        <svg width="25px" height="25px" viewbox="0 0 25 25">
+          <path d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"></path>
+        </svg>
+        <span>Go back</span>
+      </button>
+    </section>
+  </main>
+  <div
+    style="width: 100%; display: flex;align-items: center;justify-content: center;flex-direction: column;margin:20px 0 50px 0;">
     <button id="home">
       <a href="../../index.html">HOME<a>
     </button>
-    </div>
-    <script src="./index.739bf03c.js" defer=""></script>
-    <script>
-      (function() {
+  </div>
+  <script src="./index.739bf03c.js" defer=""></script>
+  <script src="../about_us/index.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+  <script src="../../js/script.js"></script>
+  <script>
+    (function () {
 
-        function extend( a, b ) {
-          for( var key in b ) {
-            if( b.hasOwnProperty( key ) ) {
-              a[key] = b[key];
-            }
+      function extend(a, b) {
+        for (var key in b) {
+          if (b.hasOwnProperty(key)) {
+            a[key] = b[key];
           }
-          return a;
         }
+        return a;
+      }
 
-        function SVGButton( el, options ) {
-          this.el = el;
-          this.options = extend( {}, this.options );
-          extend( this.options, options );
-          this.init();
-        }
+      function SVGButton(el, options) {
+        this.el = el;
+        this.options = extend({}, this.options);
+        extend(this.options, options);
+        this.init();
+      }
 
-        SVGButton.prototype.options = {
-          speed : { reset : 800, active : 150 },
-          easing : { reset : mina.elastic, active : mina.easein }
+      SVGButton.prototype.options = {
+        speed: { reset: 800, active: 150 },
+        easing: { reset: mina.elastic, active: mina.easein }
+      };
+
+      SVGButton.prototype.init = function () {
+        this.shapeEl = this.el.querySelector('span.morph-shape');
+
+        var s = Snap(this.shapeEl.querySelector('svg'));
+        this.pathEl = s.select('path');
+        this.paths = {
+          reset: this.pathEl.attr('d'),
+          active: this.shapeEl.getAttribute('data-morph-active')
         };
 
-        SVGButton.prototype.init = function() {
-          this.shapeEl = this.el.querySelector( 'span.morph-shape' );
+        this.initEvents();
+      };
 
-          var s = Snap( this.shapeEl.querySelector( 'svg' ) );
-          this.pathEl = s.select( 'path' );
-          this.paths = {
-            reset : this.pathEl.attr( 'd' ),
-            active : this.shapeEl.getAttribute( 'data-morph-active' )
-          };
+      SVGButton.prototype.initEvents = function () {
+        this.el.addEventListener('mousedown', this.down.bind(this));
+        this.el.addEventListener('touchstart', this.down.bind(this));
 
-          this.initEvents();
-        };
+        this.el.addEventListener('mouseup', this.up.bind(this));
+        this.el.addEventListener('touchend', this.up.bind(this));
 
-        SVGButton.prototype.initEvents = function() {
-          this.el.addEventListener( 'mousedown', this.down.bind(this) );
-          this.el.addEventListener( 'touchstart', this.down.bind(this) );
+        this.el.addEventListener('mouseout', this.up.bind(this));
+      };
 
-          this.el.addEventListener( 'mouseup', this.up.bind(this) );
-          this.el.addEventListener( 'touchend', this.up.bind(this) );
+      SVGButton.prototype.down = function () {
+        this.pathEl.stop().animate({ 'path': this.paths.active }, this.options.speed.active, this.options.easing.active);
+      };
 
-          this.el.addEventListener( 'mouseout', this.up.bind(this) );
-        };
+      SVGButton.prototype.up = function () {
+        this.pathEl.stop().animate({ 'path': this.paths.reset }, this.options.speed.reset, this.options.easing.reset);
+      };
 
-        SVGButton.prototype.down = function() {
-          this.pathEl.stop().animate( { 'path' : this.paths.active }, this.options.speed.active, this.options.easing.active );
-        };
+      [].slice.call(document.querySelectorAll('button.button--effect-1')).forEach(function (el) {
+        new SVGButton(el);
+      });
 
-        SVGButton.prototype.up = function() {
-          this.pathEl.stop().animate( { 'path' : this.paths.reset }, this.options.speed.reset, this.options.easing.reset );
-        };
+      [].slice.call(document.querySelectorAll('button.button--effect-2')).forEach(function (el) {
+        new SVGButton(el, {
+          speed: { reset: 650, active: 650 },
+          easing: { reset: mina.elastic, active: mina.elastic }
+        });
+      });
 
-        [].slice.call( document.querySelectorAll( 'button.button--effect-1' ) ).forEach( function( el ) {
-          new SVGButton( el );
-        } );
+    })();
+  </script>
 
-        [].slice.call( document.querySelectorAll( 'button.button--effect-2' ) ).forEach( function( el ) {
-          new SVGButton( el, {
-            speed : { reset : 650, active : 650 },
-            easing : { reset : mina.elastic, active : mina.elastic }
-          } );
-        } );
+  <script>
+    const nav = document.querySelector('nav');
+    const btn = document.querySelector('button');
 
-      })();
-    </script>
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      btn.classList.toggle('active');
+    })
+  </script>
+</body>
 
-    <script>
-      const nav = document.querySelector('nav');
-      const btn = document.querySelector('button');
-
-      btn.addEventListener('click', () => {
-        nav.classList.toggle('active');
-        btn.classList.toggle('active');
-      })
-    </script>
-  </body>
 </html>

@@ -513,7 +513,7 @@ a.frame__demo--current {
 }
 
 video {
-  background: rgb(0, 0, 23);
+  background: 000;
   top: 0;
   position: absolute;
   z-index: -1;
