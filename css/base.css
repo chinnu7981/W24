@@ -513,12 +513,19 @@ a.frame__demo--current {
 }
 
 video {
-  width: 100vw;
-  height: 100dvh;
-  object-fit: cover;
-  z-index: -10;
-  display: absolute;
-  position: fixed;
+  background: rgb(0, 0, 23);
+  top: 0;
+  position: absolute;
+  z-index: -1;
+  @media screen and (max-width: 1000px) {
+    width: auto;
+    left: -90%;
+    height: 100vh;
+  }
+  @media screen and (min-width: 1000px) {
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 .slide__img {
