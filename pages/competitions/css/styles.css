@@ -515,18 +515,11 @@ button#home {
 
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap");
 
-<<<<<<< Updated upstream
-nav *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-align: center;
-=======
 nav * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
->>>>>>> Stashed changes
+  text-align: center; 
 }
 
 nav a {
@@ -597,16 +590,10 @@ nav ul li {
   font-weight: 500;
 }
 
-<<<<<<< Updated upstream
-nav ul li a{
-    color: #fff;
-    transition: all .5s ease;
-    font-size: 16px;
-=======
 nav ul li a {
   color: #fff;
-  transition: all 0.5s ease;
->>>>>>> Stashed changes
+  transition: all .5s ease;
+  font-size: 16px;
 }
 nav ul li a:hover {
   background-color: #fff;

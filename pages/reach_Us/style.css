@@ -3,6 +3,10 @@
   padding: 0;
   margin: 0;
 }
+html{
+  background-color: #191919;
+}
+
 body,
 html {
   max-width: 100vw;
@@ -13,12 +17,24 @@ html {
   align-items: center;
   font-family: "lemon milk";
   justify-content: space-evenly;
-  background: url("./images/3d-modern-background-with-cyber-particles.jpg")
-    no-repeat fixed;
   background-size: 100vw 150vh;
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+video {
+  top: 0;
+  width: auto;
+  min-width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.4;
+  @media screen and (max-width: 1000px) {
+    left: -55%;
+  }
 }
 
 .navToggle6 {
@@ -186,8 +202,8 @@ li {
   border-radius: 15px;
   background: transparent;
   border-radius: 8px;
-  padding-top: min(100px,10vh);
-  margin-bottom: min(.5vh,.5vw);
+  padding-top: min(100px, 10vh);
+  margin-bottom: min(0.5vh, 0.5vw);
   @media screen and (max-width: 1000px) {
     min-height: 350px;
     width: 70vw;
@@ -390,7 +406,7 @@ a span:nth-child(1) {
 }
 
 @font-face {
-  font-family: 'Wargate';
+  font-family: "Wargate";
   src: url(../../css/Wargate-Normal.otf);
 }
 button#home {
@@ -401,126 +417,124 @@ button#home {
   background-color: #33333377;
   backdrop-filter: blur(10px);
   padding: 10px 20px;
-  font-size: max(2.5vw,2vh);
+  font-size: max(2.5vw, 2vh);
   font-weight: 700;
   color: #fff;
   border-radius: 5px;
-  font-family: 'Wargate';
+  font-family: "Wargate";
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap");
 
-nav *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-align: center;
+nav * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-nav a{
-    text-decoration: none;
+nav a {
+  text-decoration: none;
 }
 
-nav ul{
-    list-style: none;
+nav ul {
+  list-style: none;
 }
 
-.navbutton{
-    border: none;
-    outline: none;
-    height: 30px;
-    width: 30px;
+.navbutton {
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 30px;
 }
 
+nav {
+  height: 100vh;
+  background-color: #130c61;
+  width: 200px;
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
 
-
-nav{
-    height: 100vh;
-    background-color: #130c61;
-    width: 200px;
-    padding: 10px;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-
-    transform: translateX(1800px);
-    transition: transform .5s ease-in-out;
-    z-index: 1000;
+  transform: translateX(1800px);
+  transition: transform 0.5s ease-in-out;
+  z-index: 1000;
 }
 
-nav.active{
-    transform: translateX(0);
+nav.active {
+  transform: translateX(0);
 }
 
-nav .logo{
-    margin: 25px 0 20px;
+nav .logo {
+  margin: 25px 0 20px;
 }
 
-nav .logo a{
-    font-size: 22px;
-    color: white;
-    padding: 10px;
+nav .logo a {
+  font-size: 22px;
+  color: white;
+  padding: 10px;
 
-    font-weight: 700;
+  font-weight: 700;
 
-    display: flex;
-    align-items: center;
-    transition: .3s ease;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
 }
 
-nav .logo a:hover{
-    padding-right: 20px;
+nav .logo a:hover {
+  padding-right: 20px;
 }
 
 nav .logo a i {
-    font-size: 27px;
-    margin-right: 10px;
-    transition: .5s ease-in-out;
+  font-size: 27px;
+  margin-right: 10px;
+  transition: 0.5s ease-in-out;
 }
 
 nav .logo a:hover i {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 nav ul li {
-    padding: 10px;
-    font-weight: 500;
+  padding: 10px;
+  font-weight: 500;
 }
 
-nav ul li a{
-    color: #fff;
-    transition: all .5s ease;
+nav ul li a {
+  color: #fff;
+  transition: all 0.5s ease;
 }
 .aa:hover {
-    background-color: #fff;
-    color: #130c61;
-    display: block;
-    padding-right: 10px;
+  background-color: #fff;
+  color: #130c61;
+  display: block;
+  padding-right: 10px;
 }
 
-.navbutton{
-    cursor: pointer;
-    border: 1px solid #130c61;
-    color:#130c61;
-    background-color: #fff;
-    padding: 3px 5px;
-    border-radius: 3px;
+.navbutton {
+  cursor: pointer;
+  border: 1px solid #130c61;
+  color: #130c61;
+  background-color: #fff;
+  padding: 3px 5px;
+  border-radius: 3px;
 
-    position: fixed;
-    top: 40px;
-    right: 40px;
+  position: fixed;
+  top: 40px;
+  right: 40px;
 
-    transform: translateX(0);
-    transition: background-color .5s ease, transform .47s ease-in-out;
+  transform: translateX(0);
+  transition: background-color 0.5s ease, transform 0.47s ease-in-out;
 }
 
-.navbutton:hover{
-    background-color: #130c61;
-    color:#fff;
+.navbutton:hover {
+  background-color: #130c61;
+  color: #fff;
 }
 
-.navbutton.active{
-    transform: translateX(-180px);
-    position: fixed;
-    right: 45px;
+.navbutton.active {
+  transform: translateX(-180px);
+  position: fixed;
+  right: 45px;
 }
