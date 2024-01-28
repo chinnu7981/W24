@@ -5,8 +5,8 @@
   cursor: none !important;
 }
 @font-face {
-  font-family: 'Wargate';
-  src: url('./Wargate-Normal.otf');
+  font-family: "Wargate";
+  src: url("./Wargate-Normal.otf");
 }
 
 @font-face {
@@ -31,22 +31,22 @@
   font-family: "Barlow-par";
   src: url("../fonts/Barlow-Black.ttf") format("truetype");
 }
-.theme_desc{
-  @media screen and (min-width:1000px) {
+.theme_desc {
+  @media screen and (min-width: 1000px) {
     width: 40vw;
   }
 }
-.desc_text{
-  @media screen and (min-width:1000px) {
+.desc_text {
+  @media screen and (min-width: 1000px) {
     width: 40vw;
   }
   margin-bottom: 3.5vh;
 }
-.wrk_title{
-  @media screen and (min-width:1000px) {
+.wrk_title {
+  @media screen and (min-width: 1000px) {
     margin-left: 15vw;
   }
-  @media screen and (max-width:1000px) {
+  @media screen and (max-width: 1000px) {
     margin-top: 5vh;
   }
 }
@@ -499,8 +499,17 @@ a.frame__demo--current {
   background: #232d31;
 }
 
-.deco--7 {
-  background: #0f0f0f;
+.deco--7,.deco--6,.deco--5 {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  will-change: transform, opacity, filter;
+  @media screen AND (min-width: 1000px) {
+    background-size: 50vw auto;
+  }
+  @media screen AND (max-width: 1000px) {
+    background-size: auto 100vh;
+  }
 }
 
 video {

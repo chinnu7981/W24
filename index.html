@@ -48,26 +48,24 @@
       let temp = 0;
       btns[0].addEventListener('click', function () {
         if (temp == 0) {
-          extra.style='right:0'
+          extra.style = 'right:0'
           btns[0].innerHTML = `
                 <li class="nav-item hid">
                   <a class="navbar-brand menu_btn" style="font-size: max(1.5vw,1.75vh);">
-                    <span style="font-family: 'MyFont'; color: #57effe">C</span>
-                    <span style="font-family: 'MyFont'; color: white">LOSE</span>
+                    <span class="navbar-toggler-icon"></span>
                   </a>
                 </li>`
           temp = 1
         }
         else {
-          extra.style='right:-1'
+          extra.style = 'right:-1'
           btns[0].innerHTML = `
                 <li class="nav-item hid">
                   <a class="navbar-brand menu_btn" style="font-size: max(1.5vw,1.75vh);">
-                    <span style="font-family: 'MyFont'; color: #57effe">M</span>
-                    <span style="font-family: 'MyFont'; color: white">ENU</span>
+                    <span class="navbar-toggler-icon"></span>
                   </a>
                 </li>`
-                temp=0;
+          temp = 0;
         }
       })
     });
@@ -171,8 +169,7 @@
                 </li>
                 <li class="nav-item hid">
                   <a class="navbar-brand menu_btn" style="font-size: max(1.5vw,1.75vh);">
-                    <span style="font-family: 'MyFont'; color: #57effe">M</span>
-                    <span style="font-family: 'MyFont'; color: white">ENU</span>
+                    <span class="navbar-toggler-icon"></span>
                   </a>
                 </li>
                 <li class="nav-item hidden">
@@ -404,8 +401,8 @@
           <div class="deco deco--5"></div>
           <div class="deco deco--6"></div>
           <div class="deco deco--6"></div>
-          <div class="deco deco--7"></div>
-          <div class="deco deco--7"></div>
+          <div class="deco deco--7" style="background-image: url(./1st\ half.png);background-position: 100%;"></div>
+          <div class="deco deco--7" style="background-image: url(./2nd\ half.png);background-position: 0;"></div>
         </div>
       </div>
     </div>
