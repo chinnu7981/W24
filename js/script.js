@@ -5,7 +5,7 @@ document.addEventListener("mousemove", (e) => {
   let y = e.pageY;
   cursors.setAttribute(
     "style",
-    "top: " + (e.pageY-12.5) + "px; left: " + (e.pageX-12.5) + "px;"
+    "top: " + (e.pageY - 12.5) + "px; left: " + (e.pageX - 12.5) + "px;"
   );
 });
 
@@ -15,3 +15,8 @@ document.addEventListener("click", () => {
     cursors.classList.remove("expand");
   }, 500);
 });
+let preloader = document.getElementById('preloader');
+
+document.addEventListener('DOMContentLoaded', () => {
+  preloader.style.display = 'none';
+})
