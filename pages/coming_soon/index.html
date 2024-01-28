@@ -7,6 +7,8 @@
     <link href="../../favicon.png" rel="icon" />
     <title>Wissenaire'23 | Comming Soon</title>
     <link rel="stylesheet" href="./comingSoon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <link
       rel="stylesheet"
@@ -30,189 +32,41 @@
   <script
     type="text/javascript"
     src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".toggle").click(function () {
-        $(".menu").toggleClass("active");
-      });
-      $(".toggle").bind("tap", function () {
-        $(".menu").toggleClass("active");
-      });
-    });
-  </script>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
-
-    .toggle {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      z-index: 50000001 !important;
-      -webkit-filter: invert(100%);
-      filter: invert(100%);
-      color: wheat;
-    }
-
-    .toggle a {
-      text-decoration: none;
-      color: white;
-      font-size: 24px;
-      cursor: pointer;
-      -webkit-filter: invert(100%);
-      filter: invert(100%);
-    }
-
-    .menu {
-      margin: 0;
-      padding: 0;
-      position: fixed;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background-color: #0c1226;
-      /* background-image: linear-gradient(to right, #072142, #14216d 42%, #160d4b); */
-      z-index: 50000000 !important;
-      transition: 0.5s;
-    }
-
-    .meunul {
-      margin: 0;
-      padding: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
-    li {
-      /* font-family: monospace; */
-      font-family: "Didact Gothic", sans-serif;
-    }
-
-    .meunul li {
-      list-style: none;
-    }
-
-    .meunul li a {
-      padding: 10px;
-      display: inline-block;
-
-      font-family: "Didact Gothic", sans-serif;
-      font-size: 2em;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: white;
-    }
-
-    .meunul li a:hover {
-    }
-
-    .menu.active {
-      left: 0;
-      overflow: auto;
-    }
-
-    .toggle {
-      color: white !important;
-    }
-
-    /* body {
-    text-align: center;
-  } */
-
-    .letter {
-      font-family: "Didact Gothic", sans-serif;
-      font-size: 5.1vmin;
-      text-shadow: 0.03em 0.03em 0.02em #777;
-      will-change: transform;
-      cursor: default;
-
-      display: inline-block;
-      transition: transform 0.2s ease;
-    }
-
-    /* This is all we need :D */
-    .letter:hover {
-      transform: scaleX(1.2) scaleY(1.1);
-    }
-  </style>
 
   <body
     class="comingSoonBody"
     style="display: flex; justify-content: center; align-items: center">
-    <nav class="navbar navbar-expand-lg glass-morph navbar-dark">
-      <a class="navbar-brand" href="#" id="main-logo">
-        <img
-          src="../../PatchWork/wiss.png"
-          height="30"
-          class="d-inline-block align-top"
-          alt="" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul
-          class="navbar-nav"
-          style="justify-content: space-around; width: 100vw">
-          <li class="nav-item"></li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="../about_us/index.html">
-              <span style="font-family: 'MyFont'; color: #57effe">A</span>
-              <span style="font-family: 'MyFont'; color: white">BOUT US</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="#">
-              <span style="font-family: 'MyFont'; color: #57effe">T</span>
-              <span style="font-family: 'MyFont'; color: white">HEME</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="../../index.html">
-              <p style="font-family: 'MyFont'">
-                <span style="font-family: 'MyFont'; color: #57effe">H</span>
-                <span style="font-family: 'MyFont'; color: white">OME</span>
-              </p>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="../competitions/index.html">
-              <span style="font-family: 'MyFont'; color: #57effe">C</span>
-              <span style="font-family: 'MyFont'; color: white"
-                >OMPETETIONS</span
-              >
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="../reach_Us/index.html">
-              <span style="font-family: 'MyFont'; color: #57effe">R</span>
-              <span style="font-family: 'MyFont'; color: white">EACH US</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-brand" href="#">
-              <span style="font-family: 'MyFont'; color: #57effe">M</span>
-              <span style="font-family: 'MyFont'; color: white">ENU</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+
+      <button class="navbutton"><i class="fa-solid fa-bars"></i></button>
+      <nav  dir="rtl">
+          <div class="logo" >
+              <a href="#">
+                  Wissenaire
+                  <i class="fa-solid fa-dice-d20"></i>
+              </a>
+          </div>
+          <ul>
+
+            <li><a href="../../">Home</a></li>
+            <li><a href="../competitions/">Competitions</a></li>
+            <li><a href="../coming_soon/">Guests</a></li>
+            <li><a href="../coming_soon/">Exhibits</a></li>
+            <li><a href="https://witp.wissenaire.org/">Winter Internship</a></li>
+            <li><a href="../workshops/">Workshops</a></li>
+            <li><a href="../coming_soon/">Intiatives</a></li>
+            <li><a href="../coming_soon/">Highlights</a></a></li>
+            <li><a href="../teampage/">Team</a></li>
+            <li><a href="../coming_soon/">Sponsors</a></li>
+            <li><a href="../reach_Us/">Reach Us</a></li>
+
+          </ul>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
     <div class="loader">
       <span>C</span>
       <span>O</span>
@@ -230,5 +84,84 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"></script>
+
+      <script>
+        (function() {
+
+          function extend( a, b ) {
+            for( var key in b ) {
+              if( b.hasOwnProperty( key ) ) {
+                a[key] = b[key];
+              }
+            }
+            return a;
+          }
+
+          function SVGButton( el, options ) {
+            this.el = el;
+            this.options = extend( {}, this.options );
+            extend( this.options, options );
+            this.init();
+          }
+
+          SVGButton.prototype.options = {
+            speed : { reset : 800, active : 150 },
+            easing : { reset : mina.elastic, active : mina.easein }
+          };
+
+          SVGButton.prototype.init = function() {
+            this.shapeEl = this.el.querySelector( 'span.morph-shape' );
+
+            var s = Snap( this.shapeEl.querySelector( 'svg' ) );
+            this.pathEl = s.select( 'path' );
+            this.paths = {
+              reset : this.pathEl.attr( 'd' ),
+              active : this.shapeEl.getAttribute( 'data-morph-active' )
+            };
+
+            this.initEvents();
+          };
+
+          SVGButton.prototype.initEvents = function() {
+            this.el.addEventListener( 'mousedown', this.down.bind(this) );
+            this.el.addEventListener( 'touchstart', this.down.bind(this) );
+
+            this.el.addEventListener( 'mouseup', this.up.bind(this) );
+            this.el.addEventListener( 'touchend', this.up.bind(this) );
+
+            this.el.addEventListener( 'mouseout', this.up.bind(this) );
+          };
+
+          SVGButton.prototype.down = function() {
+            this.pathEl.stop().animate( { 'path' : this.paths.active }, this.options.speed.active, this.options.easing.active );
+          };
+
+          SVGButton.prototype.up = function() {
+            this.pathEl.stop().animate( { 'path' : this.paths.reset }, this.options.speed.reset, this.options.easing.reset );
+          };
+
+          [].slice.call( document.querySelectorAll( 'button.button--effect-1' ) ).forEach( function( el ) {
+            new SVGButton( el );
+          } );
+
+          [].slice.call( document.querySelectorAll( 'button.button--effect-2' ) ).forEach( function( el ) {
+            new SVGButton( el, {
+              speed : { reset : 650, active : 650 },
+              easing : { reset : mina.elastic, active : mina.elastic }
+            } );
+          } );
+
+        })();
+      </script>
+
+      <script>
+        const nav = document.querySelector('nav');
+        const btn = document.querySelector('button');
+
+        btn.addEventListener('click', () => {
+          nav.classList.toggle('active');
+          btn.classList.toggle('active');
+        })
+      </script>
   </body>
 </html>
