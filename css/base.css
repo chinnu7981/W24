@@ -44,11 +44,36 @@
 }
 .wrk_title {
   @media screen and (min-width: 1000px) {
-    margin-left: 15vw;
+    margin-left: 10vw;
   }
   @media screen and (max-width: 1000px) {
     margin-top: 5vh;
   }
+}
+@media screen and (max-width: 576px) {
+  .wrk_title {
+    padding-left: 60px !important;
+  }
+  .shifter {
+    background-position-x: -265px !important;
+  }
+  .wrkshps {
+    font-size: 95px;
+  }
+  .shifer p {
+    font-size: 20px;
+  }
+}
+
+#video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+  /* object-fit: cover; */
 }
 
 /* :root {
@@ -499,7 +524,9 @@ a.frame__demo--current {
   background: #232d31;
 }
 
-.deco--7,.deco--6,.deco--5 {
+.deco--7,
+.deco--6,
+.deco--5 {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
