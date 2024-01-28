@@ -5,33 +5,166 @@
 }
 body,
 html {
-  background-color: #191919;
-  z-index: -2;
   max-width: 100vw;
   height: fit-content;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   font-family: "lemon milk";
   justify-content: space-evenly;
+  background: url("./images/3d-modern-background-with-cyber-particles.jpg")
+    no-repeat fixed;
   background-size: 100vw 150vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-video {
-  top: 0;
-  width: auto;
-  min-width: 100vw;
-  height: fit-content;
-  min-height: 100vh;
-  position: fixed;
-  z-index: -1;
-  opacity: 0.4;
-  @media screen and (max-width: 1000px) {
-    left: -55%;
+
+.navToggle6 {
+  position: absolute;
+  width: max(5vh, 2.5vw);
+  aspect-ratio: 2/1;
+  top: 30%;
+  left: 3%;
+  transition-duration: 0.5s;
+}
+@media screen and (max-width: 1000px) {
+  #wiss_logo_full {
+    display: none;
+    height: 0;
+  }
+
+  .navToggle6 #wiss_logo {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: max(10vh, 7.5vw);
+    top: -15px;
+    left: 8px;
   }
 }
+@media screen and (min-width: 1000px) {
+  #wiss_logo {
+    display: none;
+    height: 0;
+  }
+
+  #wiss_logo_full {
+    position: absolute;
+    height: 40px;
+    top: 5px;
+    left: 8px;
+    filter: none;
+  }
+}
+.navToggle6 .iicon {
+  transition-duration: 0.5s;
+  position: absolute;
+  max-width: 10vw;
+  aspect-ratio: 7/1;
+  width: 60px;
+  top: 40px;
+  left: 80vw;
+  background-color: #fff;
+}
+.navToggle6 .iicon:before {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 60px;
+  max-width: 10vw;
+  aspect-ratio: 7/1;
+  background-color: #fff;
+  content: "";
+  top: -15px;
+}
+.navToggle6 .iicon:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 60px;
+  max-width: 10vw;
+  aspect-ratio: 7/1;
+  background-color: #fff;
+  content: "";
+  top: 15px;
+}
+.navToggle6 .iicon:after {
+  transition-duration: 0.5s;
+  position: absolute;
+  width: 60px;
+  max-width: 10vw;
+  aspect-ratio: 7/1;
+  background-color: #fff;
+  content: "";
+  top: 15px;
+}
+.navToggle6.open .iicon {
+  transition-duration: 0.5s;
+  transform: rotateZ(180deg);
+}
+.navToggle6.open .iicon:before {
+  transform: rotateZ(45deg) scaleX(0.75) translate(20px, -6px);
+}
+.navToggle6.open .iicon:after {
+  transform: rotateZ(-45deg) scaleX(0.75) translate(20px, 6px);
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
+  background: #fff;
+  background-size: cover !important;
+}
+.background.open {
+  transition-duration: 0.5s;
+  opacity: 0.4;
+}
+
+.upper-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 80px;
+  z-index: 999999;
+}
+
+.navbar {
+  width: max-content;
+  list-style-type: none;
+  margin-top: 10px;
+  padding: 15px;
+  left: -5px;
+  top: max(10vh, 6vw);
+  display: none;
+  height: 100vh;
+  position: absolute;
+  line-height: 60px;
+  font-size: min(3vh, 5vw);
+  z-index: 9999;
+  font-family: "Oswald", sans-serif;
+  background: transparent;
+  backdrop-filter: blur(5px);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+li {
+  width: 100%;
+  cursor: pointer;
+  padding: 0.5%;
+  max-height: 7vh;
+}
 #head {
-  margin-top: 50px;
   font-family: "ethnocent";
 }
 .singup {
@@ -53,6 +186,8 @@ video {
   border-radius: 15px;
   background: transparent;
   border-radius: 8px;
+  padding-top: min(100px,10vh);
+  margin-bottom: min(.5vh,.5vw);
   @media screen and (max-width: 1000px) {
     min-height: 350px;
     width: 70vw;
@@ -128,7 +263,7 @@ video {
   padding-top: max(0.7vw, 0.65vh);
   display: flex;
   column-gap: 25px;
-  font-size: max(3vh, 3vw);
+  font-size: max(5vh, 5vw);
   align-items: center;
   justify-content: center;
 }
@@ -209,70 +344,20 @@ form a {
   letter-spacing: 4px;
 }
 
-a.icon--facebook:hover {
-  background: #316ff6;
+.icon:hover {
+  background: #03f40f;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px #316ff6, 0 0 25px #316ff6, 0 0 50px #316ff6,
-    0 0 100px #316ff6;
+  box-shadow: 0 0 5px #03f40f, 0 0 25px #03f40f, 0 0 50px #03f40f,
+    0 0 100px #03f40f;
 }
 
-a.icon--facebook span:nth-child(1) {
-  bottom: 2px;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #316ff6);
-  animation: btn-anim1 2s linear infinite;
-}
-
-a.icon--instagram:hover {
-  background: #cd486b;
+.home:hover {
+  background: #03f40f;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px #cd486b, 0 0 25px #cd486b, 0 0 50px #cd486b,
-    0 0 100px #cd486b;
-}
-
-a.icon--instagram span:nth-child(1) {
-  bottom: 2px;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #cd486b);
-  animation: btn-anim1 2s linear infinite;
-}
-a.icon--twitter:hover {
-  background: #191919;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #191919, 0 0 25px #191919, 0 0 50px #191919,
-    0 0 100px #191919;
-}
-
-a.icon--twitter span:nth-child(1) {
-  bottom: 2px;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #191919);
-  animation: btn-anim1 2s linear infinite;
-}
-a.icon--linkedin:hover {
-  background: #0077b5;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #0077b5, 0 0 25px #0077b5, 0 0 50px #0077b5,
-    0 0 100px #0077b5;
-}
-
-a.icon--linkedin span:nth-child(1) {
-  bottom: 2px;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #0077b5);
-  animation: btn-anim1 2s linear infinite;
+  box-shadow: 0 0 5px #03f40f, 0 0 25px #03f40f, 0 0 50px #03f40f,
+    0 0 100px #03f40f;
 }
 a span {
   position: absolute;
@@ -290,8 +375,152 @@ a span {
   }
 }
 
+a span:nth-child(1) {
+  bottom: 2px;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03f40f);
+  animation: btn-anim1 2s linear infinite;
+}
 @media screen and (min-width: 1000px) {
   .sc-icons {
     transform: translateY(-6vh);
   }
+}
+
+@font-face {
+  font-family: 'Wargate';
+  src: url(../../css/Wargate-Normal.otf);
+}
+button#home {
+  border: none;
+  outline: none;
+  width: 120px;
+  min-width: 7vw;
+  background-color: #33333377;
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  font-size: max(2.5vw,2vh);
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Wargate';
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap');
+
+nav *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+}
+
+.navbutton{
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+nav{
+    height: 100vh;
+    background-color: #130c61;
+    width: 200px;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+
+    transform: translateX(1800px);
+    transition: transform .5s ease-in-out;
+    z-index: 1000;
+}
+
+nav.active{
+    transform: translateX(0);
+}
+
+nav .logo{
+    margin: 25px 0 20px;
+}
+
+nav .logo a{
+    font-size: 22px;
+    color: white;
+    padding: 10px;
+
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    transition: .3s ease;
+}
+
+nav .logo a:hover{
+    padding-right: 20px;
+}
+
+nav .logo a i {
+    font-size: 27px;
+    margin-right: 10px;
+    transition: .5s ease-in-out;
+}
+
+nav .logo a:hover i {
+    transform: rotate(180deg);
+}
+
+nav ul li {
+    padding: 10px;
+    font-weight: 500;
+}
+
+nav ul li a{
+    color: #fff;
+    transition: all .5s ease;
+}
+.aa:hover {
+    background-color: #fff;
+    color: #130c61;
+    display: block;
+    padding-right: 10px;
+}
+
+.navbutton{
+    cursor: pointer;
+    border: 1px solid #130c61;
+    color:#130c61;
+    background-color: #fff;
+    padding: 3px 5px;
+    border-radius: 3px;
+
+    position: fixed;
+    top: 40px;
+    right: 40px;
+
+    transform: translateX(0);
+    transition: background-color .5s ease, transform .47s ease-in-out;
+}
+
+.navbutton:hover{
+    background-color: #130c61;
+    color:#fff;
+}
+
+.navbutton.active{
+    transform: translateX(-180px);
+    position: fixed;
+    right: 45px;
 }
