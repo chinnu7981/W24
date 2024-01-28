@@ -78,10 +78,136 @@
 }
 .glass-morph {
   backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
   background-color: rgb(0, 0, 0, 0.5) !important;
   position: absolute !important;
 
   top: 0;
   z-index: 100;
   width: 100vw;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap');
+
+nav *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+}
+
+.navbutton{
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+nav{
+    height: 100vh;
+    background-color: #130c61;
+    width: 200px;
+    padding: 10px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+
+    transform: translateX(1800px);
+    transition: transform .5s ease-in-out;
+    z-index: 1000;
+}
+
+nav.active{
+    transform: translateX(0);
+}
+
+nav .logo{
+    margin: 25px 0 20px;
+}
+
+.aa:hover{
+  text-decoration: none !important;
+}
+
+nav .logo a{
+    font-size: 22px;
+    color: white;
+    padding: 10px;
+
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    transition: .3s ease;
+}
+
+nav .logo a:hover{
+    padding-right: 20px;
+}
+
+nav .logo a i {
+    font-size: 27px;
+    margin-right: 10px;
+    transition: .5s ease-in-out;
+}
+
+nav .logo a:hover i {
+    transform: rotate(180deg);
+}
+
+nav ul li {
+    padding: 10px;
+    font-weight: 500;
+}
+
+nav ul li a{
+    color: #fff;
+    transition: all .5s ease;
+    text-decoration: none
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color: #130c61;
+    display: block;
+    padding-right: 10px;
+}
+
+.navbutton{
+    cursor: pointer;
+    border: 1px solid #130c61;
+    color:#130c61;
+    background-color: #fff;
+    padding: 3px 5px;
+    border-radius: 3px;
+
+    position: fixed;
+    top: 40px;
+    right: 40px;
+
+    transform: translateX(0);
+    transition: background-color .5s ease, transform .47s ease-in-out;
+}
+
+.navbutton:hover{
+    background-color: #130c61;
+    color:#fff;
+    ;
+}
+
+.navbutton.active{
+    transform: translateX(-180px);
+    position: fixed;
+    right: 45px;
 }
