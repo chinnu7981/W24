@@ -1,232 +1,173 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.comingSoonBody {
-  width: 100%;
-  height: 100vh;
-  background: #001122;
-  display: grid;
-  place-items: center;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-}
-.loader {
-  perspective: 1000px;
-  font-size: 8vw;
-  -webkit-perspective: 1000px;
-}
-.loader > span {
-  display: inline-block;
-  color: #fff;
-  transform-style: preserve-3d;
-  transform-origin: 0 100%;
-  animation: anim 3s infinite linear;
-}
-.loader > span:nth-child(even) {
-  color: #00ed64;
-}
-.loader > span:nth-child(2) {
-  animation-delay: 0.2s;
-}
-.loader > span:nth-child(3) {
-  animation-delay: 0.4s;
-}
-.loader > span:nth-child(4) {
-  animation-delay: 0.6s;
-}
-.loader > span:nth-child(5) {
-  animation-delay: 0.8s;
-}
-.loader > span:nth-child(6) {
-  animation-delay: 1s;
-}
-.loader > span:nth-child(7) {
-  animation-delay: 1.2s;
-}
-.loader > span:nth-child(8) {
-  animation-delay: 1.4s;
-}
-.loader > span:nth-child(9) {
-  animation-delay: 1.6s;
-}
-.loader > span:nth-child(10) {
-  animation-delay: 1.8s;
-}
-.loader > span:nth-child(11) {
-  animation-delay: 2s;
-}
-.loader > span:nth-child(12) {
-  animation-delay: 2.2s;
-}
-.loader > span:nth-child(13) {
-  animation-delay: 2.4s;
-}
-.loader > span:nth-child(14) {
-  animation-delay: 2.6s;
-}
-@keyframes anim {
-  35% {
-    transform: rotateX(360deg);
-  }
-  100% {
-    transform: rotateX(360deg);
-  }
-}
-.glass-morph {
-  backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-  background-color: rgb(0, 0, 0, 0.5) !important;
-  position: absolute !important;
-
-  top: 0;
-  z-index: 100;
-  width: 100vw;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../favicon.png" rel="icon" />
+    <title>Wissenaire'23 | Comming Soon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap');
 
-nav *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-align: center;
-}
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous" />
+    <!-- <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  /> -->
+      <link rel="stylesheet" href="./comingSoon.css" />
+  </head>
 
-nav a{
-    text-decoration: none;
-}
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
-nav ul{
-    list-style: none;
-}
+  <body
+    class="comingSoonBody"
+    style="display: flex; justify-content: center; align-items: center">
 
-.navbutton{
-    border: none;
-    outline: none;
-    height: 30px;
-    width: 30px;
-}
+    <button class="navbutton">
+      <i class="fa-solid fa-bars"></i>
+      <!-- <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+        <span class="icon-bar"></span> -->
+    </button>
+    <nav  dir="rtl">
+        <div class="logo" >
+            <a href="../../">
+                <span>Wissenaire</span>
+                <!-- <i class="fa-solid fa-dice-d20"></i> -->
+            </a>
+        </div>
+        <ul>
 
+          <li><a href="../competitions/">Competitions</a></li>
+          <li><a href="../coming_soon/">Guests</a></li>
+          <li><a href="../coming_soon/">Exhibits</a></li>
+          <li><a href="https://witp.wissenaire.org/">Winter Internship</a></li>
+          <li><a href="../workshops/">Workshops</a></li>
+          <li><a href="../coming_soon/">Intiatives</a></li>
+          <li><a href="../coming_soon/">Highlights</a></a></li>
+          <li><a href="../teampage/">Team</a></li>
+          <li><a href="../coming_soon/">Sponsors</a></li>
+          <li><a href="../reach_Us/">Reach Us</a></li>
 
+        </ul>
+    </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="loader">
+      <span>C</span>
+      <span>O</span>
+      <span>M</span>
+      <span>I</span>
+      <span>N</span>
+      <span>G</span>
+      <span> </span>
+      <span>S</span>
+      <span>O</span>
+      <span>O</span>
+      <span>N</span>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
 
-nav{
-    height: 100vh;
-    background-color: #130c61;
-    width: 200px;
-    padding: 10px;
-    position: fixed;
-    top: 0px;
-    right: 0px;
+      <script>
+        (function() {
 
-    transform: translateX(1800px);
-    transition: transform .5s ease-in-out;
-    z-index: 1000;
-}
+          function extend( a, b ) {
+            for( var key in b ) {
+              if( b.hasOwnProperty( key ) ) {
+                a[key] = b[key];
+              }
+            }
+            return a;
+          }
 
-nav.active{
-    transform: translateX(0);
-}
+          function SVGButton( el, options ) {
+            this.el = el;
+            this.options = extend( {}, this.options );
+            extend( this.options, options );
+            this.init();
+          }
 
-nav .logo{
-    margin: 25px 0 20px;
-}
+          SVGButton.prototype.options = {
+            speed : { reset : 800, active : 150 },
+            easing : { reset : mina.elastic, active : mina.easein }
+          };
 
-.aa:hover{
-  text-decoration: none !important;
-}
+          SVGButton.prototype.init = function() {
+            this.shapeEl = this.el.querySelector( 'span.morph-shape' );
 
-nav .logo a{
-    font-size: 22px;
-    color: white;
-    padding: 10px;
+            var s = Snap( this.shapeEl.querySelector( 'svg' ) );
+            this.pathEl = s.select( 'path' );
+            this.paths = {
+              reset : this.pathEl.attr( 'd' ),
+              active : this.shapeEl.getAttribute( 'data-morph-active' )
+            };
 
-    font-weight: 700;
+            this.initEvents();
+          };
 
-    display: flex;
-    align-items: center;
-    transition: .3s ease;
-}
+          SVGButton.prototype.initEvents = function() {
+            this.el.addEventListener( 'mousedown', this.down.bind(this) );
+            this.el.addEventListener( 'touchstart', this.down.bind(this) );
 
-nav .logo a:hover{
-    padding-right: 20px;
-}
+            this.el.addEventListener( 'mouseup', this.up.bind(this) );
+            this.el.addEventListener( 'touchend', this.up.bind(this) );
 
-nav .logo a i {
-    font-size: 27px;
-    margin-right: 10px;
-    transition: .5s ease-in-out;
-}
+            this.el.addEventListener( 'mouseout', this.up.bind(this) );
+          };
 
-nav .logo a:hover i {
-    transform: rotate(180deg);
-}
+          SVGButton.prototype.down = function() {
+            this.pathEl.stop().animate( { 'path' : this.paths.active }, this.options.speed.active, this.options.easing.active );
+          };
 
-nav ul li {
-    padding: 10px;
-    font-weight: 500;
-}
+          SVGButton.prototype.up = function() {
+            this.pathEl.stop().animate( { 'path' : this.paths.reset }, this.options.speed.reset, this.options.easing.reset );
+          };
 
-nav ul li a{
-    color: #fff;
-    transition: all .5s ease;
-    text-decoration: none
-}
-nav ul li a:hover{
-    background-color: #fff;
-    color: #130c61;
-    display: block;
-    padding-right: 10px;
-    text-decoration: none;
-}
+          [].slice.call( document.querySelectorAll( 'button.button--effect-1' ) ).forEach( function( el ) {
+            new SVGButton( el );
+          } );
 
-.navbutton{
-  cursor: pointer;
-border: 1px solid rgba(0, 0, 0, 0);
-color: #fff;
-background-color: rgb(0 0 0 / 0%);
-padding: 3px 5px;
-border-radius: 3px;
-position: fixed;
-top: 40px;
-right: 40px;
-transform: translateX(0);
-transition: background-color .5s ease, transform .47s ease-in-out;
-}
+          [].slice.call( document.querySelectorAll( 'button.button--effect-2' ) ).forEach( function( el ) {
+            new SVGButton( el, {
+              speed : { reset : 650, active : 650 },
+              easing : { reset : mina.elastic, active : mina.elastic }
+            } );
+          } );
 
-.navbutton:hover {
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff;
-}
+        })();
+      </script>
 
-.navbutton.active{
-    transform: translateX(-180px);
-    position: fixed;
-    right: 55px;
-}
+      <script>
+        const nav = document.querySelector('nav');
+        const btn = document.querySelector('button');
 
-nav{/* From https://css.glass */
-background: rgba(0, 0, 0, 0.56);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(9.3px);
--webkit-backdrop-filter: blur(9.3px);
-}
-
-nav .logo span{
-  margin: auto;
-}
-
-.fa-solid{
-  font-size: xx-large;
-}
-
-button:focus{
-  outline: none;
-}
-
+        btn.addEventListener('click', () => {
+          nav.classList.toggle('active');
+          btn.classList.toggle('active');
+        })
+      </script>
+  </body>
+</html>
