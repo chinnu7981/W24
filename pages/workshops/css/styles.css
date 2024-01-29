@@ -162,6 +162,7 @@ transition: background-color .5s ease, transform .47s ease-in-out;
     transform: translateX(-180px);
     position: fixed;
     right: 55px;
+      z-index: 1000;
 }
 
 .lapnav{/* From https://css.glass */
