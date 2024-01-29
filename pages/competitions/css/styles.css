@@ -75,7 +75,6 @@ video {
 
 nav.lap {
   z-index: 999;
-  font-size: 2vh;
   position: fixed;
   top: 0;
   padding: 0 !important;
@@ -95,12 +94,12 @@ nav.lap ul {
 nav.lap ul li {
   padding: 0;
   text-align: left;
-  margin: 10px 0;
+  margin: 40px 0;
 }
 
 nav.lap ul li a {
   color: #fff;
-  font-size: 2em;
+  font-size: 3.5vh;
   text-decoration: none;
   font-weight: 500;
   position: relative;

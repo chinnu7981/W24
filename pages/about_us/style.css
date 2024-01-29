@@ -79,12 +79,12 @@ nav.lap ul {
 nav.lap ul li {
   padding: 0;
   text-align: left;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 nav.lap ul li a {
   color: #fff;
-  font-size: 2em;
+  font-size: 3.5vh !important;
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -98,7 +98,6 @@ nav.lap ul li a:after {
   position: absolute;
   height: 3px;
   border-radius: 5px;
-  background: #fff;
   bottom: -10px;
   left: 0;
   transform-origin: left;
@@ -121,15 +120,6 @@ nav.lap .close {
   pointer-events: none;
 }
 
-nav.lap h2 {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  opacity: 0;
-  pointer-events: none;
-  color: #fff;
-  font-size: 2em;
-}
 
 nav.lap .close div::before,
 nav.lap .close div::after {
@@ -137,7 +127,6 @@ nav.lap .close div::after {
   position: absolute;
   width: 30px;
   height: 4px;
-  background: #fff;
   transition: background 0.5s ease;
 }
 nav.lap .close div::before {
@@ -542,7 +531,7 @@ nav ul li a {
   color: #fff;
   transition: all 0.5s ease;
 }
-nav ul li a:hover {
+nav.laptop ul li a:hover {
   background-color: #fff;
   color: #130c61;
   display: block;
