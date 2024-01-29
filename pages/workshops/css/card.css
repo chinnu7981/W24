@@ -126,6 +126,15 @@ h4 {
   .card-wrapper{
   height:330px;
   }
+  .card-stadd {
+    background-position-y: -17px;
+  }
+  
+
+.card-digital {
+
+    background-position-x: -144px;
+}
 }
 
 .icon {
