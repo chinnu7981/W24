@@ -574,7 +574,7 @@ transition: background-color .5s ease, transform .47s ease-in-out;
     right: 55px;
 }
 
-nav{/* From https://css.glass */
+.lapnav{/* From https://css.glass */
 background: rgba(0, 0, 0, 0.56);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
