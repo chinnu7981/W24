@@ -3,6 +3,18 @@ import { Slideshow } from './slideshow.js';
 
 const slides = document.querySelector('.slides');
 const slideshow = new Slideshow(slides);
+var leftButton = document.getElementById("leftButton");
+var rightButton = document.getElementById("rightButton");
+document.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowLeft") {
+        slideshow.prev();
+    }
+});
+document.addEventListener("keydown", function (event) {
+    if (event.key === "ArrowRight") {
+        slideshow.next();
+    }
+});
 
 document.querySelector('.slides-nav__item--prev').addEventListener('click', () => slideshow.prev());
 document.querySelector('.slides-nav__item--next').addEventListener('click', () => slideshow.next());
@@ -18,3 +30,5 @@ Observer.create({
 
 // Preload all images. Once all images are preloaded, remove the 'loading' class from the body.
 preloadImages('.slide__img').then(() => document.body.classList.remove('loading'));
+
+
