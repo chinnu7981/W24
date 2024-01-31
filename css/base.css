@@ -742,3 +742,15 @@ btn {
     width: 80px;
   }
 }
+
+
+/* ////// */
+
+.menu__inner .nav-item a span:hover{ 
+/* nav ul li a:hover{ */
+    background-color: #fff;
+    color: black;
+    display: block;
+    padding-right: 10px;
+}
+
