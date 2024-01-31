@@ -746,6 +746,10 @@ btn {
 
 /* ////// */
 
+.menu__inner .nav-item a span{
+    text-align: center;
+}
+
 .menu__inner .nav-item a span:hover{ 
 /* nav ul li a:hover{ */
     background-color: #fff;
@@ -754,3 +758,7 @@ btn {
     padding-right: 10px;
 }
 
+.menu__inner .nav-item .home:hover{
+    display: block;
+    padding-left: 10px;
+}
