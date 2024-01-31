@@ -210,8 +210,8 @@
 }
 
 .morph-shape svg path {
-	stroke: #5f656f;
-	stroke-width: 5px;
+	stroke: transparent;
+	stroke-width: 0;
 }
 
 @media screen and (max-width: 999px) {
@@ -229,7 +229,7 @@
 	.menu.menu--open + .main {
 		opacity: 0.05;
 	}
-	
+
 	.menu__inner{
 		padding: 50px 80px 50px 10px;
 		display: flex;
@@ -248,6 +248,5 @@
     		left: 0px;
     		width: max-content;
 	}
-	
-}
 
+}
