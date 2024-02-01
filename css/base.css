@@ -760,6 +760,10 @@ btn {
     top: 5px;
 }
 
+.hid:active{
+    right: 80px;
+}
+
 .navbar{
   padding: 1rem 2rem !important;
 }
