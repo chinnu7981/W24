@@ -1,583 +1,1221 @@
-
-
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wissenaire| 24</title>
-  <link rel="stylesheet" href="https://use.typekit.net/uoh2fuj.css" />
-  <link rel="shortcut icon" href="./favicon.png" />
-  <link rel="shortcut icon" href="../favicon.ico" />
-  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome.min.css" />
-  <link rel="stylesheet" type="text/css" href="css/demo.css" />
-  <link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="css/demo.css"> -->
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/styles.css">
   <script src="js/snap.svg-min.js"></script>
-  <link rel="stylesheet" type="text/css" href="./css/base.css" />
-  <link rel="stylesheet" type="text/css" href="./css/cursor.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-
-  <script>
-    document.documentElement.className = "js";
-    var supportsCssVars = function () {
-      var e,
-        t = document.createElement("style");
-      return (
-        (t.innerHTML = "root: { --tmp-var: bold; }"),
-        document.head.appendChild(t),
-        (e = !!(
-          window.CSS &&
-          window.CSS.supports &&
-          window.CSS.supports("font-weight", "var(--tmp-var)")
-        )),
-        t.parentNode.removeChild(t),
-        e
-      );
-    };
-    supportsCssVars() ||
-      alert(
-        "Please view this demo in a modern browser that supports CSS Variables."
-      );
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", (event) => {
-      let btns = document.getElementsByClassName("menu_btn");
-      let extra = document.getElementById("menu_extra");
-      let temp = 0;
-      btns[0].addEventListener("click", function () {
-        if (temp == 0) {
-          extra.style = "right:0";
-          btns[0].innerHTML = `
-                <li class="nav-item hid">
-                  <a class="navbar-brand menu_btn" style="font-size: max(1.5vw,1.75vh);">
-                    <span class="navbar-toggler-icon"></span>
-                  </a>
-                </li>`;
-          temp = 1;
-        } else {
-          extra.style = "right:-1";
-          btns[0].innerHTML = `
-                <li class="nav-item hid">
-                  <a class="navbar-brand menu_btn" style="font-size: max(1.5vw,1.75vh);">
-                    <span class="navbar-toggler-icon"></span>
-                  </a>
-                </li>`;
-          temp = 0;
-        }
-      });
-    });
-  </script>
+  <link rel="stylesheet" href="../../css/cursor.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Competitions</title>
 </head>
 
-<body class="theme-1 demo-16 loading">
-  <div id="preloader">
-    <img src="./wissicon.png" id="loader-logo">
-    <video autoplay loop muted id="loader-video">
-      <source src="./img/preloader.mp4" type="video/mp4">
-    </video>
+<body>
+  <button class="navbutton laptop"><i class="fa-solid fa-bars"></i></button>
+  <nav dir="rtl" class="lapnav laptop">
+    <div class="logo">
+      <a href="../../">
+        <span>Wissenaire</span>
+        <!-- <i class="fa-solid fa-dice-d20"></i> -->
+      </a>
+    </div>
+    <ul>
+
+      <li><a href="../about_us/">About us</a></li>
+      <li><a href="../coming_soon/">Guests</a></li>
+      <li><a href="../coming_soon/">Exhibits</a></li>
+      <li><a href="https://witp.wissenaire.org/">Winter Internship</a></li>
+      <li><a href="../workshops/">Workshops</a></li>
+      <li><a href="../coming_soon/">Intiatives</a></li>
+      <li><a href="../coming_soon/">Highlights</a></a></li>
+      <li><a href="../teampage/">Team</a></li>
+      <li><a href="../coming_soon/">Sponsors</a></li>
+      <li><a href="../reach_Us/">Reach Us</a></li>
+
+    </ul>
+
+  </nav>
+  <div class="containerg lap">
+    <div class="bars"></div>
   </div>
-  <div class="cur" id="circle">
-    <img class="satelite" src="./Untitled-1 (1).png" alt="" />
+
+  <nav class="lap" style="top: 0 !important;width: 100vw;">
+    <div class="close">
+      <div></div>
+    </div>
+    <ul>
+
+      <li><a href="../about_us/">About us</a></li>
+      <li><a href="../coming_soon/">Guests</a></li>
+      <li><a href="../coming_soon/">Exhibits</a></li>
+      <li><a href="https://witp.wissenaire.org/">Winter Internship</a></li>
+      <li><a href="../workshops/">Workshops</a></li>
+      <li><a href="../coming_soon/">Intiatives</a></li>
+      <li><a href="../coming_soon/">Highlights</a></a></li>
+      <li><a href="../teampage/">Team</a></li>
+      <li><a href="../coming_soon/">Sponsors</a></li>
+      <li><a href="../reach_Us/">Reach Us</a></li>
+
+    </ul>
+  </nav>
+
+  <div class="cur" id="circle" style="position: absolute;">
+    <img class="satelite" src="../../Untitled-1 (1).png" alt="" />
+  </div>
+  <div
+    style="max-width: 100vw;min-height: 100vh;z-index: -1;overflow-x: hidden;width: 100%;position: fixed;top: 0;left: 0;">
+    <video src="./171185 (540p).mp4" muted autoplay loop></video>
+  </div>
+  <h1 style="margin-left: 18px; font-size: xx-large;text-align: center; margin-top: 5%;">COMPETITIONS</h1>
+  <div class="container">
+
+    <h1>YANTRIX</h1>
+
+    <div class="grid">
+
+      <div class="card">
+        <input id="card1" type="checkbox">
+        <label class="tgl-btn" for="card1"><span></span></label>
+        <label for="card1" class="tgl-view">
+          <div class="card-image">
+            <img src="images/trekkon.jpg">
+          </div>
+          <h2 class="card-title">Trekkon</h2>
+          <p class="card-detail">Build your own autonomous robot within the allotted parameters, and aim for the fastest
+            possible speed to outrun other robots on the track and arrive at the objective as quickly as possible.</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+
+
+
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card2" type="checkbox">
+        <label class="tgl-btn" for="card2"><span></span></label>
+        <label for="card2" class="tgl-view">
+          <div class="card-image">
+            <img src="images/drone.jpg">
+          </div>
+          <h2 class="card-title">Drone Challenge</h2>
+          <p class="card-detail">Just add your desired image size (width & height) after our URL, and you'll get a
+            random image.https://picsum.photos/200/300</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card3" type="checkbox">
+        <label class="tgl-btn" for="card3"><span></span></label>
+        <label for="card3" class="tgl-view">
+          <div class="card-image">
+            <img src="images/Robowars.png">
+          </div>
+          <h2 class="card-title">Robo Wars</h2>
+          <p class="card-detail">
+            As they battle it out to claim victory in the war of the robots, this is a fantastic opportunity for
+            robotic enthusiasts to demonstrate and advance their expertise in robotics.</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card4" type="checkbox">
+        <label class="tgl-btn" for="card4"><span></span></label>
+        <label for="card4" class="tgl-view">
+          <div class="card-image">
+            <img src="images/roborace.jpg">
+          </div>
+          <h2 class="card-title">Robo Race</h2>
+          <p class="card-detail">Build It, Run It, Break It, Fix It, REPEAT!
+            Doesn’t everyone adore the adrenaline thrill of approaching the finish? How exciting if your bot competes on the track to be the greatest!</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card5" type="checkbox">
+        <label class="tgl-btn" for="card5"><span></span></label>
+        <label for="card5" class="tgl-view">
+          <div class="card-image">
+            <img src="images/robosoc.jpg">
+          </div>
+          <h2 class="card-title">Robo Soccer</h2>
+          <p class="card-detail">Just add your desired image size (width & height) after our URL, and you'll get a
+            random image.https://picsum.photos/200/300</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+    </div>
+
   </div>
 
-  <main>
-    <div class="main">
-      <div class="view">
-        <div class="frame">
-          <!-- <div class="frame__title">
-            <img src="./nav-logo.png" alt="Your Company Logo" class="company-logo" />
-          </div> -->
-          <!-- <nav class="navbar navbar-light glass-morph">
-              <dummy>
-                <a class="navbar-brand" href="#" id="main-logo">
-                  <img
-                    src="./PatchWork/wiss.png"
-                    height="30"
-                    class="d-inline-block align-top"
-                    alt="" />
-                </a>
-              </dummy>
-              <a class="navbar-brand" href="./pages/about_us/">
-                <span style="font-family: 'MyFont'; color: #57effe">A</span>
-                <span style="font-family: 'MyFont'; color: white">BOUT US</span>
-              </a>
-              <a class="navbar-brand" href="#">
-                <span style="font-family: 'MyFont'; color: #57effe">T</span>
-                <span style="font-family: 'MyFont'; color: white">HEME</span>
-              </a>
-              <a class="navbar-brand" href="#">
-                <p style="font-family: 'MyFont'">
-                  <span style="font-family: 'MyFont'; color: #57effe">H</span>
-                  <span style="font-family: 'MyFont'; color: white">OME</span>
-                </p>
-              </a>
-              <a class="navbar-brand" href="./pages/competitions/">
-                <span style="font-family: 'MyFont'; color: #57effe">C</span>
-                <span style="font-family: 'MyFont'; color: white"
-                  >OMPETETIONS</span
-                >
-              </a>
-              <a class="navbar-brand" href="./pages/reach_Us/">
-                <span style="font-family: 'MyFont'; color: #57effe">R</span>
-                <span style="font-family: 'MyFont'; color: white">EACH US</span>
-              </a>
-              <a class="navbar-brand" href="#">
-                <span style="font-family: 'MyFont'; color: #57effe">M</span>
-                <span style="font-family: 'MyFont'; color: white">ENU</span>
-              </a>
-            </nav> -->
-          <nav class="navbar navbar-expand-lg glass-morph navbar-dark">
-            <a class="navbar-brand" href="#" id="main-logo">
-              <img src="./PatchWork/wiss.png" height="30" class="d-inline-block align-top" alt="" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+
+
+  <div class="container">
+
+    <h1>CODING EVENT</h1>
+
+    <div class="grid">
+
+      <div class="card">
+        <input id="card6" type="checkbox">
+        <label class="tgl-btn" for="card6"><span></span></label>
+        <label for="card6" class="tgl-view">
+          <div class="card-image">
+            <img src="images/css.jpg">
+          </div>
+          <h2 class="card-title">CSS Battle</h2>
+          <p class="card-detail">Just add your desired image size (width & height) after our URL, and you'll get a
+            random image.https://picsum.photos/200/300</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav" style="justify-content: space-around; width: 100%">
-                <li class="nav-item"></li>
-
-
-                <li class="nav-item hid">
-                  <a class="navbar-brand menu_btn" style="font-size: max(1.5vw, 1.75vh)">
-                    <span class="navbar-toggler-icon"></span>
-                  </a>
-                </li>
-
-                <!-- <li class="nav-item hidden">
-                  <a class="navbar-brand" style="font-size: max(1.5vw, 1.75vh)" href="./pages/coming_soon/">
-                    <span style="font-family: 'MyFont'; color: #57effe">G</span>
-                    <span style="font-family: 'MyFont'; color: white">UESTS</span>
-                  </a>
-                </li>
-                <li class="nav-item hidden">
-                  <a class="navbar-brand" style="font-size: max(1.5vw, 1.75vh)" href="./pages/coming_soon/">
-                    <span style="font-family: 'MyFont'; color: #57effe">E</span>
-                    <span style="font-family: 'MyFont'; color: white">XHIBITS</span>
-                  </a>
-                </li> -->
-<!--                 <li class="nav-item hidden">
-                  <a class="navbar-brand" style="font-size: max(1.5vw, 1.75vh)" href="https://witp.wissenaire.org">
-                    <span style="font-family: 'MyFont'; color: #57effe">W</span>
-                    <span style="font-family: 'MyFont'; color: white">INTER INTERNSHIP</span>
-                  </a>
-                </li> -->
-                <!-- <li class="nav-item hidden">
-                  <a class="navbar-brand" style="font-size: max(1.5vw, 1.75vh)" href="./pages/workshops/">
-                    <span style="font-family: 'MyFont'; color: #57effe">W</span>
-                    <span style="font-family: 'MyFont'; color: white">ORKSHOPS</span>
-                  </a>
-                </li>
-                <li class="nav-item hidden">
-                  <a class="navbar-brand" style="font-size: max(1.5vw, 1.75vh)" href="./pages/coming_soon/">
-                    <span style="font-family: 'MyFont'; color: #57effe">I</span>
-                    <span style="font-family: 'MyFont'; color: white">NITIATIVES</span>
-                  </a>
-                </li>
-                <li class="nav-item hidden">
-                  <a class="navbar-brand" style="font-size: max(1.5vw, 1.75vh)" href="./pages/coming_soon/">
-                    <span style="font-family: 'MyFont'; color: #57effe">H</span>
-                    <span style="font-family: 'MyFont'; color: white">IGHLIGHTS</span>
-                  </a>
-                </li>
-                <li class="nav-item hidden">
-                  <a class="navbar-brand" style="font-size: max(1.5vw, 1.75vh)" href="./pages/coming_soon/">
-                    <span style="font-family: 'MyFont'; color: #57effe">T</span>
-                    <span style="font-family: 'MyFont'; color: white">EAM</span>
-                  </a>
-                </li>
-                <li class="nav-item hidden">
-                  <a class="navbar-brand" style="font-size: max(1.5vw, 1.75vh)" href="./pages/coming_soon/">
-                    <span style="font-family: 'MyFont'; color: #57effe">S</span>
-                    <span style="font-family: 'MyFont'; color: white">PONSORS</span>
-                  </a>
-                </li> -->
-              </ul>
-            </div>
-          </nav>
-          <nav class="slides-nav">
-            <button id="leftButton" class="slides-nav__item slides-nav__item--prev">
-              &larr;
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
             </button>
-            <button id="rightButton" class="slides-nav__item slides-nav__item--next">
-              &rarr;
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card7" type="checkbox">
+        <label class="tgl-btn" for="card7"><span></span></label>
+        <label for="card7" class="tgl-view">
+          <div class="card-image">
+            <img src="images/Code Hasten.png">
+          </div>
+          <h2 class="card-title">Code Hasten</h2>
+          <p class="card-detail">Code Hasten, a programming competition where you can join with friends and sharpen your
+            abilities together.</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
             </button>
-          </nav>
-        </div>
-        <div class="morph-shape" data-morph-open="M300-10c0,0,295,164,295,410c0,232-295,410-295,410"
-          data-morph-close="M300-10C300-10,5,154,5,400c0,232,295,410,295,410">
-          <svg width="100%" height="100%" viewBox="0 0 600 800" preserveAspectRatio="none">
-            <path fill="none" d="M300-10c0,0,0,164,0,410c0,232,0,410,0,410" />
-          </svg>
-        </div>
-        <div id="menu_extra" class="menu__inner glass-morph" style="
-              position: absolute;
-              top: 11.05vh;
-              font-family: 'bomber-gradient';
-              padding-left: 0;
-              width: auto;
-              padding-right: 0;
-              display: flex;
-              flex-direction: column;
-            ">
-          <ul style="list-style: none">
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
 
-            <li class="nav-item">
-              <a class="navbar-brand" style="font-size: 1vw" href="./pages/about_us/">
-                <span style="font-family: 'MyFont'; color: white">ABOUT US</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-brand" style="font-size: 1vw" href="#">
-                <span style="font-family: 'MyFont'; color: white">THEME</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-brand" style="font-size: 1vw" href="./pages/competitions/">
-                <span style="font-family: 'MyFont'; color: white">COMPETETIONS</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-brand" style="font-size: 1vw"
-                href="./pages/reach_Us/index.html">
-                <span style="font-family: 'MyFont'; color: white">REACH US</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-brand" style="font-size: 1vw" href="./pages/coming_soon/">
-                <span style="font-family: 'MyFont'; color: white">GUESTS</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-brand" style="font-size: 1vw" href="./pages/coming_soon/">
-                <span style="font-family: 'MyFont'; color: white">EXHIBITS</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-brand" style="font-size: 1vw" href="https://witp.wissenaire.org">
-                <span style="font-family: 'MyFont'; color: white">WINTER INTERNSHIP</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-brand" style="font-size: 1vw" href="./pages/workshops/">
-                <span style="font-family: 'MyFont'; color: white">WORKSHOPS</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-brand" style="font-size: 1vw" href="./pages/coming_soon/">
-                <span style="font-family: 'MyFont'; color: white">INITIATIVES</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-brand" style="font-size: 1vw" href="./pages/coming_soon/">
-                <span style="font-family: 'MyFont'; color: white">HIGHLIGHTS</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-brand" style="font-size: 1vw" href="./pages/teampage/">
-                <span style="font-family: 'MyFont'; color: white">TEAM</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-brand" style="font-size: 1vw" href="./pages/coming_soon/">
-                <span style="font-family: 'MyFont'; color: white">SPONSORS</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="slides">
-          <div class="slide">
-            <div class="slide__img slide_content" style="background-image: url(./web.png)" style="
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: center;
-                ">
-              <div style="
-                    padding: 0;
-                    color: white;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                  ">
-                <h1 style="
-                      font-family: 'Wargate';
-                      font-size: max(10vw, 6vh);
-                      width: 100vw;
-                    ">
-                  Wissenaire'24
-                </h1>
-                <p style="
-                      font-family: 'Wargate';
-                      width: 100vw;
-                      font-size: max(2.5vw, 2vh);
-                    ">
-                  Annual Techno management fest
-                </p>
-              </div>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
-            </div>
+      <div class="card">
+        <input id="card8" type="checkbox">
+        <label class="tgl-btn" for="card8"><span></span></label>
+        <label for="card8" class="tgl-view">
+          <div class="card-image">
+            <img src="images/debug.jpg">
           </div>
-          <div class="slide">
-            <div class="slide__img slide_content" style="
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  align-items: center;
-                  background: rgb(0, 2, 10);
-                ">
-              <div style="
-                    max-width: 100vw;
-                    min-height: 100vh;
-                    z-index: -1;
-                    overflow-x: hidden;
-                    width: 100%;
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    background: rgb(0, 2, 10);
-                  ">
-                <video src=".//Live Streaming.mp4" muted autoplay loop></video>
-              </div>
-              <p class="dummy"></p>
-              <div style="
-                    padding: 0;
-                    color: white;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: end;
-                    align-items: center;
-                    text-align: center;
-                    margin-top: 10vh;
-                    height: 80vh;
-                    width: 90vw;
-                  ">
-                <h1 style="
-                      font-family: 'Wargate';
-                      font-size: max(5vw, 6vh);
-                      width: 100vw;
-                    ">
-                  PACEM STRIFE
-                </h1>
-                <p style="
-                      font-family: 'Wargate';
-                      font-size: max(1.5vw, 2.3vh);
-                      margin-bottom: 20vh;
-                    " class="theme_desc">
-                  significance of defence technology as a deterrent to
-                  aggression and national security.
-                </p>
-              </div>
-              <p class="dummy"></p>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide__img slide_content shifter" style="
-                  background-color: rgb(1 2 9);
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: space-around;
-                  align-items: flex-start;
-                  color: white;
-                  text-align: left !important;
-                ">
-              <video id="video" autoplay loop muted>
-                <source src="./workshops-vid.mp4" type="video/mp4" />
-              </video>
-              <div class="wrk_title" style="margin-top: 134px; margin-left: -30px">
-                <p style="
-                      font-family: 'bomber-condensed' !important;
-                      font-size: max(4vh, 7vw);
-                    " class="wrkshps">
-                  Workshops
-                </p>
-                <h1 style="
-                      font-size: max(1.5vh, 1.5vw);
-                      max-width: 80vw;
-                      text-transform: uppercase;
-                      font-family: 'Barlow-Black';
-                      word-spacing: 5px;
-                      letter-spacing: 2px;
-                    " class="desc_text">
-                  Explore the array of endless workshops with bundle of packed
-                  fun , technology and knowledge.
-                </h1>
-                <a href="./pages/workshops/" style="margin-left: 20px"><button style="
-                        padding: 0;
-                        font-family: 'Barlow-Black';
-                        font-size: max(1.25vw, 1.5vh);
-                        border: solid 2px rgba(0, 0, 0, 0.17);
-                        background: #7a718288;
-                        backdrop-filter: blur(1px);
-                        border-radius: 0 35px;
-                        padding: -10px;
-                        max-height: 7vh;
-                        max-width: max(10vw, 15vh);
-                      ">
-                    KNOW MORE
-                  </button></a>
-              </div>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="slide__img slide_content" style="background-image: url(./img/main.jpg)">
-              <!--               <video autoplay muted loop id="myVideo" class="slide__img">
-                <source src="./img/theme/lamborgini.mp4" type="video/mp4" />
-              </video> -->
-              <div style="color: white !important">
-                <p style="
-                      font-family: 'bomber-condensed' !important;
-                      font-size: max(5vh, 6vw);
-                    ">
-                  competetions
-                </p>
-                <h1 style="
-                      font-size: max(2vh, 1.5vw);
-                      max-width: 80vw;
-                      text-transform: uppercase;
-                      font-family: 'Barlow-Black';
-                      word-spacing: 5px;
-                      letter-spacing: 2px;
-                    " class="desc_text">
-                  Wissenaire organises a range of competitions including robo
-                  wars, tekkon, kick off , robo race ,etc.
-                </h1>
-                <a href="./pages/competitions/" style="margin-left: 20px"><button style="
-                        padding: 0;
-                        font-family: 'Barlow-Black';
-                        font-size: max(1.25vw, 1.5vh);
-                        border: solid 2px rgba(0, 0, 0, 0.17);
-                        background: #7a718288;
-                        backdrop-filter: blur(1px);
-                        border-radius: 0 35px;
-                        padding: -10px;
-                        max-height: 7vh;
-                        max-width: max(10vw, 15vh);
-                      ">
-                    KNOW MORE
-                  </button></a>
-              </div>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
-              <p class="dummy"></p>
-            </div>
-          </div>
+          <h2 class="card-title">Debug The Code</h2>
+          <p class="card-detail">Just add your desired image size (width & height) after our URL, and you'll get a
+            random image.https://picsum.photos/200/300</p>
 
-          <div class="deco deco--5"></div>
-          <div class="deco deco--5"></div>
-          <div class="deco deco--6"></div>
-          <div class="deco deco--6"></div>
-          <div class="deco deco--7" style="
-                background-image: url(./1st\ half.jpg);
-                background-position: 100%;
-              "></div>
-          <div class="deco deco--7" style="
-                background-image: url(./2nd\ half.png);
-                background-position: 0;
-              "></div>
-        </div>
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="container">
+
+    <h1>CORE EVENTS</h1>
+
+    <div class="grid">
+
+      <div class="card">
+        <input id="card9" type="checkbox">
+        <label class="tgl-btn" for="card9"><span></span></label>
+        <label for="card9" class="tgl-view">
+          <div class="card-image">
+            <img src="images/cad.jpg">
+          </div>
+          <h2 class="card-title">CAD Modelling</h2>
+          <p class="card-detail">Just add your desired image size (width & height) after our URL, and you'll get a
+            random image.https://picsum.photos/200/300</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card10" type="checkbox">
+        <label class="tgl-btn" for="card10"><span></span></label>
+        <label for="card10" class="tgl-view">
+          <div class="card-image">
+            <img src="images/mechanical colloquia.png">
+          </div>
+          <h2 class="card-title">Mechanical Colloquia</h2>
+          <p class="card-detail">“Mechanical Engineers are the movers of the world”. We welcome all the mechanical
+            engineers out there to come show us what you got with your presentation skills.</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card11" type="checkbox">
+        <label class="tgl-btn" for="card11"><span></span></label>
+        <label for="card10" class="tgl-view">
+          <div class="card-image">
+            <img src="images/electrical colloqui.png">
+          </div>
+          <h2 class="card-title">Electrical Colloquia</h2>
+          <p class="card-detail">“Electrical engineers do it with greater frequency and less resistance”. We welcome all
+            the electrical engineers out there to come show us what you got with your presentation skills.</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+          <label>
+      </div>
+
+      <!-- </div>
+
+      </div>
+
+      <div class="container">
+
+
+        <h1>LAN WARS</h1>
+
+        <div class="grid"> -->
+
+      <div class="card">
+        <input id="card12" type="checkbox">
+        <label class="tgl-btn" for="card12"><span></span></label>
+        <label for="card12" class="tgl-view">
+          <div class="card-image">
+            <img src="images/CS Colloquia.png">
+          </div>
+          <h2 class="card-title">CSE Colloquia</h2>
+          <p class="card-detail">In the words of Benjamin Franklin, a tiny idea with the correct platform can make a big impact. At Wissenaire’24's colloquia, you may propose your ideas to respective judges and inquisitive audiences.</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card13" type="checkbox">
+        <label class="tgl-btn" for="card13"><span></span></label>
+        <label for="card13" class="tgl-view">
+          <div class="card-image">
+            <img src="images/civil colloquia.png">
+          </div>
+          <h2 class="card-title">Civil Colloquia</h2>
+          <p class="card-detail">“The best creator next to God is a civil engineer” ~ Adarsh Kumar G.S. <br>We welcome
+            all the civil engineers out there to come show us what you got with your presentation skills.</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card14" type="checkbox">
+        <label class="tgl-btn" for="card14"><span></span></label>
+        <label for="card14" class="tgl-view">
+          <div class="card-image">
+            <img src="images/truss the frame.png">
+          </div>
+          <h2 class="card-title">Truss the Frame</h2>
+          <p class="card-detail">“Everything begins with an idea” ~ Earl Nightingale. A truss is an assembly of members
+            such as beams, connected by nodes, that creates a rigid structure. In this participant have to build a truss
+            bridge with the material provided.</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="container">
+
+
+    <h1>EXECUTIVE SUITE</h1>
+
+    <div class="grid">
+
+      <div class="card">
+        <input id="card15" type="checkbox">
+        <label class="tgl-btn" for="card15"><span></span></label>
+        <label for="card15" class="tgl-view">
+          <div class="card-image">
+            <img src="images/Auction Wars.png">
+          </div>
+          <h2 class="card-title">Auction Wars</h2>
+          <p class="card-detail">This is for Marvel and DC Superhero fans! Participate in this to create the best DC and MARVEL squad and demonstrate your financial management skills by acquiring the top characters.</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card16" type="checkbox">
+        <label class="tgl-btn" for="card16"><span></span></label>
+        <label for="card16" class="tgl-view">
+          <div class="card-image">
+            <img src="images/biz.jpg">
+          </div>
+          <h2 class="card-title">Biz Pitch</h2>
+          <p class="card-detail">Experience a fascinating business pitching competition that challenges creativity and presenting abilities. Prepare to explain your entrepreneurial ideas in a concise manner.
+
+          </p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card17" type="checkbox">
+        <label class="tgl-btn" for="card17"><span></span></label>
+        <label for="card17" class="tgl-view">
+          <div class="card-image">
+            <img src="images/data.avif">
+          </div>
+          <h2 class="card-title">Data Detective Challenge</h2>
+          <p class="card-detail">Do you have a passion for Data Science and Analytical Prowess? This is your chance to showcase your talent, observational skills, and analytical acumen.
+
+          </p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <div class="container">
+
+
+    <h1>PREFEST</h1>
+
+    <div class="grid">
+
+
+      <div class="card">
+        <input id="card18" type="checkbox">
+        <label class="tgl-btn" for="card18"><span></span></label>
+        <label for="card18" class="tgl-view">
+          <div class="card-image">
+            <img src="images/ml.jpg">
+          </div>
+          <h2 class="card-title">ML Hackathon</h2>
+          <p class="card-detail">Just add your desired image size (width & height) after our URL, and you'll get a
+            random image.https://picsum.photos/200/300</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+
+
+    <h1>ONLINE</h1>
+
+    <div class="grid">
+
+
+      <div class="card">
+        <input id="card19" type="checkbox">
+        <label class="tgl-btn" for="card19"><span></span></label>
+        <label for="card19" class="tgl-view">
+          <div class="card-image">
+            <img src="images/case.jpg">
+          </div>
+          <h2 class="card-title">Case Study Challenge</h2>
+          <p class="card-detail">The largest and most anticipated case study challenge has begun. This is a chance to collaborate and utilize your abilities to analyze and provide solutions.
+                      </p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card20" type="checkbox">
+        <label class="tgl-btn" for="card20"><span></span></label>
+        <label for="card20" class="tgl-view">
+          <div class="card-image">
+            <img src="images/Tradesmith.png">
+          </div>
+          <h2 class="card-title">Trading Titan</h2>
+          <p class="card-detail">The excitement of investing involves the uncertainty of whether to invest or trade.
+            It’s not based on luck, whether in gain or loss, but on your observation and analytical skills. Get your
+            investing brains into action! As Wissenaire’24 bring you Trading Titans!</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+  <div class="container">
+
+
+    <h1>FUN GAMES</h1>
+
+    <div class="grid">
+
+      <div class="card">
+        <input id="card21" type="checkbox">
+        <label class="tgl-btn" for="card21"><span></span></label>
+        <label for="card21" class="tgl-view">
+          <div class="card-image">
+            <img src="images/call of duty.png">
+          </div>
+          <h2 class="card-title">Call Of Duty: Mobile</h2>
+          <p class="card-detail">Gear up, COD legends, and get ready to compete against the top gamers in this
+            tournament as Wissenaire'24 is hosting a thrilling gaming tournament with prize money.
+          </p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card22" type="checkbox">
+        <label class="tgl-btn" for="card22"><span></span></label>
+        <label for="card22" class="tgl-view">
+          <div class="card-image">
+            <img src="images/Valorant.png">
+          </div>
+          <h2 class="card-title">Valorant</h2>
+          <p class="card-detail">A passionate gamer? Do weapons titillate you? Ready for a tough challenge? Team Wissenaire'24 Valorant Tournament sets kill-hungry gamers against each other. Do you have "Defy the limits" potential?
+
+          </p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card23" type="checkbox">
+        <label class="tgl-btn" for="card23"><span></span></label>
+        <label for="card23" class="tgl-view">
+          <div class="card-image">
+            <img src="images/bgmi.jpg">
+          </div>
+          <h2 class="card-title">Battle Grounds: Mobile</h2>
+          <p class="card-detail">Hey! Enthusiasts of Battlegrounds Mobile India, Explore the strategic realm of fighting, sharpshooting, and survival. Are you ready to show off your gaming and IT skills? 
+</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+      <div class="card">
+        <input id="card24" type="checkbox">
+        <label class="tgl-btn" for="card24"><span></span></label>
+        <label for="card24" class="tgl-view">
+          <div class="card-image">
+            <img src="images/clash.jpg">
+          </div>
+          <h2 class="card-title">Clash Royale</h2>
+          <p class="card-detail">Just add your desired image size (width & height) after our URL, and you'll get a
+            random image.https://picsum.photos/200/300</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
       </div>
     </div>
-  </main>
+  </div>
 
+
+  <div class="container">
+
+
+    <h1>ONLINE</h1>
+
+
+    <div class="grid">
+
+      <div class="card">
+        <input id="card25" type="checkbox">
+        <label class="tgl-btn" for="card25"><span></span></label>
+        <label for="card25" class="tgl-view">
+          <div class="card-image">
+            <img src="images/quizzare.png">
+          </div>
+          <h2 class="card-title">Quizzaire</h2>
+          <p class="card-detail">Want to brighten your day with quizzes? Quizzaire has technical domain-specific rounds! Prepare to explore the world of quizzing!
+          </p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+
+      <div class="card">
+        <input id="card26" type="checkbox">
+        <label class="tgl-btn" for="card26"><span></span></label>
+        <label for="card26" class="tgl-view">
+          <div class="card-image">
+            <img src="images/vlog.jpg">
+          </div>
+          <h2 class="card-title">Youtube Vlog Challenge</h2>
+          <p class="card-detail">Are you someone looking for a bit of quizzing to make your day! Well Wissenaire'24
+            presents you Quizzaire with different rounds on various technical domains!!! Hold on and get ready to dive
+            in the world of quizzing!!!</p>
+
+          <div class=" but">
+            <button class="button button--line button--effect-1">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Know More</span>
+            </button>
+            <button class="button button--line button--effect-2">
+              <span class="morph-shape"
+                data-morph-active="M287,95.25c0,11.046-5.954,19.75-17,19.75c0,0-90-4-120-4s-120,4-120,4c-11.046,0-17.25-9.5-17.25-20.5c0-8.715,0.25-10.75,0.25-34s-0.681-26.257-1-33.75C11.5,15,18.954,10,30,10c0,0,90,3,120,3s120-3,120-3c11.046,0,17.75,6.5,17,20c-0.402,7.239,0,6.75,0,30.5C287,83.5,287,84.75,287,95.25z">
+                <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                  <path
+                    d="M290,95c0,11.046-8.954,20-20,20c0,0-90,0-120,0s-120,0-120,0c-11.046,0-20-9-20-20c0-8.715,0-25.875,0-34.5c0-7.625,0-22.774,0-30.5c0-11.625,8.954-20,20-20c0,0,90,0,120,0s120,0,120,0c11.046,0,20,8.954,20,20c0,7.25,0,22.875,0,30.5C290,69.125,290,84.5,290,95z" />
+                </svg>
+              </span>
+              <span class="button__text">Register</span>
+            </button>
+          </div>
+        </label>
+      </div>
+
+    </div>
+
+  </div>
+  <div
+    style="width: 100%; display: flex;align-items: center;justify-content: center;flex-direction: column;margin:20px 0 50px 0;">
+    <button id="home">
+      <a href="../../index.html">HOME<a>
+    </button>
+  </div>
+  <script src="../about_us/index.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+  <script src="../../js/script.js"></script>
   <script src="js/classie.js"></script>
-
   <script>
     (function () {
-      function SVGMenu(el, options) {
+
+      function extend(a, b) {
+        for (var key in b) {
+          if (b.hasOwnProperty(key)) {
+            a[key] = b[key];
+          }
+        }
+        return a;
+      }
+
+      function SVGButton(el, options) {
         this.el = el;
+        this.options = extend({}, this.options);
+        extend(this.options, options);
         this.init();
       }
 
-      SVGMenu.prototype.init = function () {
-        this.trigger = this.el.querySelector("button.menu__handle");
-        this.shapeEl = this.el.querySelector("div.morph-shape");
+      SVGButton.prototype.options = {
+        speed: { reset: 800, active: 150 },
+        easing: { reset: mina.elastic, active: mina.easein }
+      };
 
-        var s = Snap(this.shapeEl.querySelector("svg"));
-        this.pathEl = s.select("path");
+      SVGButton.prototype.init = function () {
+        this.shapeEl = this.el.querySelector('span.morph-shape');
+
+        var s = Snap(this.shapeEl.querySelector('svg'));
+        this.pathEl = s.select('path');
         this.paths = {
-          reset: this.pathEl.attr("d"),
-          open: this.shapeEl.getAttribute("data-morph-open"),
-          close: this.shapeEl.getAttribute("data-morph-close"),
+          reset: this.pathEl.attr('d'),
+          active: this.shapeEl.getAttribute('data-morph-active')
         };
-
-        this.isOpen = false;
 
         this.initEvents();
       };
 
-      SVGMenu.prototype.initEvents = function () {
-        this.trigger.addEventListener("click", this.toggle.bind(this));
+      SVGButton.prototype.initEvents = function () {
+        this.el.addEventListener('mousedown', this.down.bind(this));
+        this.el.addEventListener('touchstart', this.down.bind(this));
+
+        this.el.addEventListener('mouseup', this.up.bind(this));
+        this.el.addEventListener('touchend', this.up.bind(this));
+
+        this.el.addEventListener('mouseout', this.up.bind(this));
       };
 
-      SVGMenu.prototype.toggle = function () {
-        var self = this;
-
-        if (this.isOpen) {
-          classie.remove(self.el, "menu--anim");
-          setTimeout(function () {
-            classie.remove(self.el, "menu--open");
-          }, 250);
-        } else {
-          classie.add(self.el, "menu--anim");
-          setTimeout(function () {
-            classie.add(self.el, "menu--open");
-          }, 250);
-        }
-        this.pathEl
-          .stop()
-          .animate(
-            { path: this.isOpen ? this.paths.close : this.paths.open },
-            350,
-            mina.easeout,
-            function () {
-              self.pathEl
-                .stop()
-                .animate({ path: self.paths.reset }, 800, mina.elastic);
-            }
-          );
-
-        this.isOpen = !this.isOpen;
+      SVGButton.prototype.down = function () {
+        this.pathEl.stop().animate({ 'path': this.paths.active }, this.options.speed.active, this.options.easing.active);
       };
 
-      new SVGMenu(document.getElementById("menu"));
+      SVGButton.prototype.up = function () {
+        this.pathEl.stop().animate({ 'path': this.paths.reset }, this.options.speed.reset, this.options.easing.reset);
+      };
+
+      [].slice.call(document.querySelectorAll('button.button--effect-1')).forEach(function (el) {
+        new SVGButton(el);
+      });
+
+      [].slice.call(document.querySelectorAll('button.button--effect-2')).forEach(function (el) {
+        new SVGButton(el, {
+          speed: { reset: 650, active: 650 },
+          easing: { reset: mina.elastic, active: mina.elastic }
+        });
+      });
+
     })();
   </script>
 
-  <script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
-  <script src="./js/imagesloaded.pkgd.min.js"></script>
-  <script src="./js/gsap.min.js"></script>
-  <script src="./js/Observer.min.js"></script>
-  <script type="module" src="./js/demo16/index.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-    <script>
+  <script>
     const nav = document.querySelector('nav');
-    const btn = document.querySelector('.menu_btn');
+    const btn = document.querySelector('button');
 
     btn.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    btn.classList.toggle('active');
+      nav.classList.toggle('active');
+      btn.classList.toggle('active');
     })
-    </script>
+  </script>
+
 </body>
 
 </html>
