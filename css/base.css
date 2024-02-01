@@ -752,3 +752,14 @@ btn {
     display: block;
     padding-right: 10px;
 }
+
+.hid{
+  position: absolute;
+    /* height: 70px; */
+    right: 40px;
+    top: 10px;
+}
+
+.navbar{
+  padding: 1rem 2rem;
+}
