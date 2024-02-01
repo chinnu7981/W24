@@ -748,7 +748,7 @@ btn {
 .menu__inner .nav-item a span:hover{
 /* nav ul li a:hover{ */
     background-color: #fff;
-    color: black;
+    color: black !important;
     display: block;
     padding-right: 10px;
 }
@@ -757,9 +757,9 @@ btn {
   position: absolute;
     /* height: 70px; */
     right: 40px;
-    top: 10px;
+    top: 5px;
 }
 
 .navbar{
-  padding: 1rem 2rem;
+  padding: 1rem 2rem !important;
 }
