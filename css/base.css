@@ -750,7 +750,7 @@ btn {
     text-align: center;
 }
 
-.menu__inner .nav-item a span:hover{ 
+.menu__inner .nav-item a:hover{ 
 /* nav ul li a:hover{ */
     background-color: #fff;
     color: black;
