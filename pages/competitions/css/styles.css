@@ -30,11 +30,11 @@ video {
   z-index: -1;
   @media screen and (max-width: 1000px) {
     width: auto;
-    left: -40%;
+    /*left: -40%;*/
     height: 100vh;
   }
   @media screen and (min-width: 1000px) {
-    width: 100vw;
+    width: auto;
     height: fit-content;
     height: 100vh;
   }
