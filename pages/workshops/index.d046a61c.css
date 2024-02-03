@@ -55,9 +55,11 @@ nav.lap {
 
 nav.lap ul {
   list-style: none;
+  transform: scale(0);
 }
 
 nav.lap ul li {
+  transform: scale(0);
   padding: 0;
   text-align: left;
   margin: 20px 0;

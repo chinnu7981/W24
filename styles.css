@@ -164,14 +164,11 @@ nav.lap .close:hover div::after {
   }
 }
 
-
 @media screen and (max-width: 1000px) {
   #wiss_logo_full {
     display: none;
     height: 0;
   }
-
-
 }
 @media screen and (min-width: 1000px) {
   #wiss_logo {
@@ -265,57 +262,58 @@ nav ul li {
   font-weight: 500;
 }
 
-nav ul li a{
-    color: #fff;
-    transition: all .5s ease;
-    font-size: 16px;
+nav ul li a {
+  color: #fff;
+  transition: all 0.5s ease;
+  font-size: 16px;
 }
-nav ul li a:hover{
-    background-color: #fff;
-    color: #130c61;
-    display: block;
-    padding-right: 10px;
+nav ul li a:hover {
+  background-color: #fff;
+  color: #130c61;
+  display: block;
+  padding-right: 10px;
 }
 
-.navbutton{
+.navbutton {
   cursor: pointer;
-border: 1px solid rgba(0, 0, 0, 0);
-color: #fff;
-background-color: rgb(0 0 0 / 0%);
-padding: 3px 5px;
-border-radius: 3px;
-position: fixed;
-top: 40px;
-right: 40px;
-transform: translateX(0);
-transition: background-color .5s ease, transform .47s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: #fff;
+  background-color: rgb(0 0 0 / 0%);
+  padding: 3px 5px;
+  border-radius: 3px;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  transform: translateX(0);
+  transition: background-color 0.5s ease, transform 0.47s ease-in-out;
 }
 
 .navbutton:hover {
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
-.navbutton.active{
-    transform: translateX(-180px);
-    position: fixed;
-    right: 55px;
-      z-index: 1000;
+.navbutton.active {
+  transform: translateX(-180px);
+  position: fixed;
+  right: 55px;
+  z-index: 1000;
 }
 
-.lapnav{/* From https://css.glass */
-background: rgba(0, 0, 0, 0.56);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(9.3px);
--webkit-backdrop-filter: blur(9.3px);
+.lapnav {
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.56);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.3px);
+  -webkit-backdrop-filter: blur(9.3px);
 }
 
-nav .logo span{
+nav .logo span {
   margin: auto;
 }
 
-.fa-solid{
+.fa-solid {
   font-size: xx-large;
 }
