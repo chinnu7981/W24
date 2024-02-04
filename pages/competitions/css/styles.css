@@ -89,6 +89,7 @@ nav.lap {
 
 nav.lap ul {
   list-style: none;
+  width: 60vw;
 }
 
 nav.lap ul li {
@@ -670,7 +671,6 @@ nav a {
 
 nav ul {
   list-style: none;
-  width: 60vw;
 }
 
 .navbutton {
