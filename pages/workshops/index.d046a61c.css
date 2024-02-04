@@ -78,6 +78,7 @@ nav.lap ul li a {
 nav.lap ul li a:after {
   content: "";
   width: 100%;
+  font-size: 3.75vh !important;
   position: absolute;
   height: 3px;
   border-radius: 5px;

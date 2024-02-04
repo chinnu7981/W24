@@ -94,12 +94,12 @@ nav.lap ul {
 nav.lap ul li {
   padding: 0;
   text-align: left;
-  margin: 40px 0;
+  margin: 50px 0;
 }
 
 nav.lap ul li a {
   color: #fff;
-  font-size: 3.5vh;
+  font-size: 3.75vh !important;
   text-decoration: none;
   font-weight: 500;
   position: relative;
@@ -670,6 +670,7 @@ nav a {
 
 nav ul {
   list-style: none;
+  width: 60vw;
 }
 
 .navbutton {
@@ -737,7 +738,7 @@ nav ul li a {
   transition: all .5s ease;
   font-size: 16px;
 }
-nav ul li a:hover {
+nav.laptop ul li a:hover {
   background-color: #fff;
   color: #130c61;
   display: block;

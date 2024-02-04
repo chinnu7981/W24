@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const close = document.querySelector('.close');
     var tl = gsap.timeline({ defaults: { duration: 1, ease: 'expo.inOut' } });
     open.addEventListener('click', () => {
-        tl
+        tl.to('nav.lap ul',{transform:'scale(1)'},'-=1.9')
             .to('nav.lap', { background: 'black' }, '-=1.9')
             .to('nav.lap', { width: '100vw' }, '-=1.8')
             .to('nav.lap', { height: '100vh' }, '-=0.5')

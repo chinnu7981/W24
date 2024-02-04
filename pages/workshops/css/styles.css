@@ -75,7 +75,7 @@ nav.lap {
 
 nav.lap ul {
   list-style: none;
-  transform: scale(0);
+  width: 60vw;
 }
 
 nav.lap ul li {
@@ -271,7 +271,7 @@ nav ul li a{
     transition: all .5s ease;
     font-size: 16px;
 }
-nav ul li a:hover{
+nav.laptop ul li a:hover {
     background-color: #fff;
     color: #130c61;
     display: block;
