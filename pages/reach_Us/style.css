@@ -1,4 +1,4 @@
-@import url("./fonts/fonts.css");
+@import url("../reach_Us/fonts/fonts.css");
 * {
   padding: 0;
   margin: 0;
@@ -56,6 +56,7 @@ html {
 }
 
 nav.lap {
+  text-transform: uppercase;
   z-index: 99;
   font-size: 3vh;
   position: fixed;
@@ -73,6 +74,7 @@ nav.lap {
 nav.lap ul {
   list-style: none;
   width: 60vw;
+  transform: scale(0);
 }
 
 nav.lap ul li {
@@ -529,14 +531,6 @@ a span {
   }
 }
 
-a span:nth-child(1) {
-  bottom: 2px;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #03f40f);
-  animation: btn-anim1 2s linear infinite;
-}
 @media screen and (min-width: 1000px) {
   .sc-icons {
     transform: translateY(-6vh);
@@ -576,6 +570,8 @@ nav a {
 }
 
 nav ul {
+  font-family: "lemon milk";
+  text-transform: uppercase;
   list-style: none;
 }
 
@@ -642,7 +638,6 @@ nav ul li {
 nav ul li a {
   color: #fff;
   transition: all 0.5s ease;
-  font-size: 16px;
 }
 nav.laptop ul li a:hover {
   background-color: #fff;

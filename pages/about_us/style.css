@@ -1,3 +1,4 @@
+@import url("../reach_Us/fonts/fonts.css");
 body {
   background-color: black;
   color: white;
@@ -58,6 +59,7 @@ h1 {
 }
 
 nav.lap {
+  font-family: "lemon milk";
   z-index: 99;
   font-size: 2vh;
   position: fixed;
@@ -75,6 +77,7 @@ nav.lap {
 nav.lap ul {
   list-style: none;
   width: 60vw;
+  transform: scale(0);
 }
 
 nav.lap ul li {
@@ -467,6 +470,7 @@ nav a {
 
 nav ul {
   list-style: none;
+  font-family: "lemon milk";
 }
 
 .navbutton {

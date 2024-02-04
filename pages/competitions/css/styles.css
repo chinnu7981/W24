@@ -1,3 +1,5 @@
+@import url("../../reach_Us/fonts/fonts.css");
+
 html,
 body {
   box-sizing: content-box;
@@ -74,6 +76,7 @@ video {
 }
 
 nav.lap {
+  font-family: "lemon milk";
   z-index: 999;
   position: fixed;
   top: 0;
@@ -90,6 +93,7 @@ nav.lap {
 nav.lap ul {
   list-style: none;
   width: 60vw;
+  transform: scale(0);
 }
 
 nav.lap ul li {
@@ -99,6 +103,7 @@ nav.lap ul li {
 }
 
 nav.lap ul li a {
+  text-transform: uppercase;
   color: #fff;
   font-size: 3.75vh !important;
   text-decoration: none;
@@ -670,6 +675,7 @@ nav a {
 }
 
 nav ul {
+  font-family: "lemon milk";
   list-style: none;
 }
 
@@ -736,7 +742,6 @@ nav ul li {
 nav ul li a {
   color: #fff;
   transition: all .5s ease;
-  font-size: 16px;
 }
 nav.laptop ul li a:hover {
   background-color: #fff;

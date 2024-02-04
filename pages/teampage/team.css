@@ -1,3 +1,5 @@
+
+@import url("../reach_Us/fonts/fonts.css");
 * {
   margin: 0;
   padding: 0;
@@ -41,6 +43,7 @@ body {
 }
 
 nav.lap {
+  font-family: "lemon milk";
   z-index: 99;
   font-size: 3vh !important;
   position: fixed;
@@ -58,6 +61,7 @@ nav.lap {
 nav.lap ul {
   list-style: none;
   width: 60vw;
+  transform: scale(0);
 }
 
 nav.lap ul li {
@@ -596,6 +600,7 @@ nav a {
 }
 
 nav ul {
+  font-family: "lemon milk";
   list-style: none;
 }
 
