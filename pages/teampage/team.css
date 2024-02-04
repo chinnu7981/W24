@@ -43,7 +43,6 @@ body {
 }
 
 nav.lap {
-  font-family: "lemon milk";
   z-index: 99;
   font-size: 3vh !important;
   position: fixed;
@@ -71,6 +70,7 @@ nav.lap ul li {
 }
 
 nav.lap ul li a {
+  font-family: "lemon milk" !important;
   font-size: 1em;
   color: #fff;
   text-decoration: none;
@@ -664,7 +664,8 @@ nav ul li {
   font-weight: 500;
 }
 
-nav ul li a {
+nav.laptop ul li a {
+  font-size: 1vw !important;
   color: #fff;
   transition: all 0.5s ease;
   font-size: 16px;
