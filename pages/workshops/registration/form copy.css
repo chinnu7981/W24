@@ -1,0 +1,146 @@
+@import url("./fonts/fonts.css");
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background: radial-gradient(ellipse at bottom, #445D48 0%, #090a0f 100%); */
+  background-image: url("./form_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #cc3819;
+  font-size: 40px;
+  margin-top: 0;
+  text-align: center;
+  font-family: "acme";
+}
+
+h2 {
+  text-align: center;
+  font-family: "Roboto-m";
+}
+
+.inputBox {
+  font-family: "Roboto-t";
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 1vh;
+  font-weight: 800;
+}
+
+.inputBox input,
+.inputBox textarea {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #cc3819;
+  color: black;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+  width: 80%;
+}
+
+#myForm {
+  width: 450px;
+  max-width: 80vw;
+  text-align: center;
+  background-color: #00000015;
+  border: 0px;
+  padding: 30px 5% 2px 5%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: fit-content;
+  border-radius: 20px;
+  box-shadow: -4px -2px 25px 0px #cc3819, 4px 5px 25px 0px #cc3819;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.inputBox span {
+  position: absolute;
+  color: #cc3819;
+  left: 8%;
+  padding: 8px 0;
+  margin: 0;
+  font-size: 18px;
+  pointer-events: none;
+  transition: 0.5s;
+  top: 5%;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span,
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span {
+  color: #cc3819;
+  transform: translateY(-20px);
+  font-size: 0.9em;
+}
+
+input[type="date"] ~ span {
+  color: #cc3819;
+  transform: translateY(-20px);
+  font-size: 0.9em;
+}
+input[type="date"] {
+  margin-top: 2vh;
+}
+
+#gender,
+#size {
+  background-color: rgba(0, 0, 0, 0);
+  color: #cc3819;
+  border-radius: 5px;
+  border-color: black;
+  transform: translateY(50%);
+
+  > option {
+    /* background-color: #CC3819; */
+  }
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  /* color: #CC3819;
+    background-color: #3c5545a9; */
+  border-radius: 25%;
+  /* filter: invert(1); */
+}
+button {
+  width: 150px;
+  height: 40px;
+  border-top: 50px;
+  background-color: #cc3819;
+  color: white;
+  border-radius: 7px;
+  align-self: flex-end;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #7a1306;
+  border: none;
+}

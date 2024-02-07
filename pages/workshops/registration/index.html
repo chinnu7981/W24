@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="./form copy.css" />
+    <!-- <script src="./index.js" defer></script> -->
+  </head>
+
+  <body>
+    <div id="bg" style="overflow: hidden">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
+    <form id="myForm">
+      <section
+        style="
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 2vh;
+        ">
+        <img
+          src="logo.png"
+          alt="W"
+          style="
+            width: 80px;
+            max-width: 90%;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 2vh;
+          " />
+        <!-- <img src="pranas.png" alt="" style="
+            width: 120px;
+            max-width: 90%;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 2vh;"/> -->
+      </section>
+      <h2
+        style="
+          font-size: x-large;
+          color: #cc3819;
+          margin-top: 2.5px;
+          margin-bottom: 2.5vh;
+        ">
+        REGISTRATION FORM
+      </h2>
+      <div class="inputBox">
+        <input name="name" type="text" required />
+        <span>Name</span>
+      </div>
+      <div class="inputBox">
+        <input
+          name="phone-number"
+          type="number"
+          id="phone"
+          oninput="limitPhoneNumber(this)"
+          maxlength="10"
+          required />
+        <span>Phone Number</span>
+      </div>
+      <div class="inputBox">
+        <input name="email" type="email" required id="emailInput" />
+        <span>Email</span>
+      </div>
+      <div class="inputBox">
+        <input name="college-name" type="text" required />
+        <span>College name</span>
+      </div>
+      <div class="inputBox">
+        <input name="domain" type="text" required />
+        <span>Registered domain</span>
+      </div>
+
+      <div class="inputBox">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <script src="./bundle.js"></script>
+  </body>
+</html>
