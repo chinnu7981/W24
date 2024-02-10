@@ -238,7 +238,7 @@ h4 {
   border-radius: 5px;
 }
 button {
-  width: 40%;
+  /* width: 40%; */
   position: relative;
   height: 3.5em;
   border: 3px ridge #149cea;
