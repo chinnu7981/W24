@@ -48,10 +48,7 @@ h2 {
   padding-bottom: 20px;
   margin-top: 1vh;
   font-weight: 800;
-  & input{
-    color:white !important;
-    background-color:transparent !important;
-  }
+  
 }
 
 .inputBox input,
@@ -60,7 +57,7 @@ h2 {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #fff;
-  color: black;
+  color: white;
   font-size: 16px;
   outline: none;
   resize: none;
