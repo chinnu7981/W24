@@ -49,8 +49,8 @@ h2 {
   margin-top: 1vh;
   font-weight: 800;
   & input{
-    color:white;
-    background-color:transparent;
+    color:white !important;
+    background-color:transparent !important;
   }
 }
 
