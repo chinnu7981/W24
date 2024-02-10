@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Wissenaire 24 | Registration</title>
     <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="./form copy.css" />
     <link
@@ -21,6 +21,20 @@
         align-items: center !important;
         padding-left: 10px;
         margin-bottom: 10px;
+      }
+
+      .multiselect-dropdown {
+        background: rgba(100, 100, 100, 0.7) !important;
+        padding: 0;
+
+        & .optext{
+          background-color: transparent !important;
+          color: #fff;
+          margin: 0;
+          width: 100%;
+          border-radius: 0 !important;
+          border-bottom: 0.1px solid #888;
+        }
       }
     </style>
   </head>
@@ -87,8 +101,8 @@
         <span>College name</span>
       </div>
       
-      <div class="container">
-        <label>Select 1</label>
+      <div class="container text-left" >
+        <label style="color: #fff;text-align: left; width: 90%; text-align: left; margin-bottom: 10px; font-size: 18px;">Domain</label>
         <select
           name="domain"
           id="domain"
@@ -115,7 +129,8 @@
         </select>
       </div>
       <div class="inputBox">
-        <button type="submit">Submit</button>
+        <button type="submit" style="border-radius: 12px;
+        border: none;">Submit</button>
       </div>
     </form>
     <script src="./bundle.js"></script>
