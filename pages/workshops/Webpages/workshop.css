@@ -398,7 +398,11 @@ button.register:hover #payment {
   transition: all 0.35s;
 }
 
-@media screen and (max-width: 1060px) {
+b{
+  color: yellow;
+}
+
+@media screen and (max-width: 1160px) {
   .wrapper {
     flex-direction: column;
     margin: 8vh 0 8vh;
@@ -443,7 +447,7 @@ button.register:hover #payment {
   box-shadow: inset 0px 0px 25px #1479ea;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
   .tabs {
     display: none;
   }
